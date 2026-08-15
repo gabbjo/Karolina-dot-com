@@ -2103,25 +2103,24 @@ function renderSeason(lang) {
   var tickets = M(COPY.season.tickets, lang);
   var venue = M(COPY.season.venue, lang);
   var ticketHref = lang === "de" ? "https://www.oper-frankfurt.de/de/" : "https://www.oper-frankfurt.de/en/";
-  var head = "<thead><tr>" +
-    "<th scope=\"col\">" + M(COPY.season.colDate, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colWork, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colRole, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colVenue, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colTickets, lang) + "</th>" +
-    "</tr></thead>";
-  var rows = SEASON.map(function (item) {
-    var flag = item.premiere ? "<span class=\"prod-flag\">" + M(COPY.season.flag, lang) + "</span>" : "";
-    return "<tr class=\"prod\">" +
-      "<td class=\"prod-dates\">" + M(item.dates, lang) + "</td>" +
-      "<td class=\"prod-work\"><em>" + item.work + "</em>" + flag + "</td>" +
-      "<td class=\"prod-role\">" + M(item.role, lang) + "</td>" +
-      "<td class=\"prod-venue\">" + venue + "</td>" +
-      "<td class=\"prod-tickets\"><a href=\"" + ticketHref + "\" target=\"_blank\" rel=\"noreferrer\">" + tickets + "</a></td>" +
-      "</tr>";
+  var cards = SEASON.map(function (item) {
+    var flag = item.premiere ? "<span class=\"season-card-flag\">" + M(COPY.season.flag, lang) + "</span>" : "";
+    return "<article class=\"season-card\">" +
+      "<div class=\"season-card-head\">" +
+        "<span class=\"season-card-dates\">" + M(item.dates, lang) + "</span>" +
+        flag +
+      "</div>" +
+      "<h3 class=\"season-card-work\"><em>" + item.work + "</em></h3>" +
+      "<p class=\"season-card-role\">" + M(item.role, lang) + "</p>" +
+      "<div class=\"season-card-foot\">" +
+        "<span class=\"season-card-venue\">" + venue + "</span>" +
+        "<a class=\"season-card-ticket\" href=\"" + ticketHref + "\" target=\"_blank\" rel=\"noreferrer\">" + tickets + " <span aria-hidden=\"true\">→</span></a>" +
+      "</div>" +
+    "</article>";
   }).join("");
-  host.innerHTML = "<table class=\"season-table\">" + head + "<tbody>" + rows + "</tbody></table>";
+  host.innerHTML = "<div class=\"season-cards\">" + cards + "</div>";
   decorateLinks(host, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function rewriteOperFrankfurtLinks(lang) {
