@@ -1986,6 +1986,7 @@ function renderNews(lang) {
   }).join("") + "</div>";
   host.innerHTML = splash + briefs;
   decorateLinks(host, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function entryHtml(entry, lang, prizeWord) {
@@ -2041,6 +2042,9 @@ function renderChronology(lang) {
       return yearBlockHtml(block, lang, prizeWord);
     }).join("");
   }
+  decorateLinks(host, lang);
+  if (fullHost) decorateLinks(fullHost, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function repRow(label, value) {
@@ -2086,6 +2090,11 @@ function renderRepertoire(lang) {
   var concertFull = document.getElementById("rep-concert-full");
   if (operaFull) operaFull.innerHTML = REP_OPERA.map(function (item) { return renderRepItem(item, lang, false); }).join("");
   if (concertFull) concertFull.innerHTML = REP_CONCERT.map(function (item) { return renderRepItem(item, lang, true); }).join("");
+  decorateLinks(operaHost, lang);
+  decorateLinks(concertHost, lang);
+  if (operaFull) decorateLinks(operaFull, lang);
+  if (concertFull) decorateLinks(concertFull, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function renderSeason(lang) {
@@ -2198,8 +2207,10 @@ function isMobileNav() {
 function setMenuOpen(open) {
   var btn = document.getElementById("menu-btn");
   var nav = document.getElementById("site-nav");
+  var header = document.getElementById("top");
   if (!btn || !nav) return;
   nav.classList.toggle("is-open", open);
+  if (header) header.classList.toggle("is-menu-open", open);
   btn.setAttribute("aria-expanded", open ? "true" : "false");
   btn.textContent = M(open ? COPY.menuClose : COPY.menu, currentLang);
   syncMenuInert();
