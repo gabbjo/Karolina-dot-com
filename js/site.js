@@ -58,10 +58,10 @@ const COPY = {
     "fr": "Karolina Bengtsson, soprano"
   },
   "desc": {
-    "en": "Karolina Bengtsson, Swedish soprano from Huseby, Småland. Member of the soloist ensemble at Oper Frankfurt, Birgit Nilsson Stipendiat 2025. Biography, chronology, repertoire and season 2026/27.",
-    "sv": "Karolina Bengtsson, svensk sopran från Huseby i Småland. Medlem av Oper Frankfurts solistensemble, Birgit Nilsson-stipendiat 2025. Biografi, kronologi, repertoar och säsongen 2026/27.",
-    "de": "Karolina Bengtsson, schwedische Sopranistin aus Huseby in Småland. Mitglied des Solistenensembles der Oper Frankfurt, Birgit-Nilsson-Stipendiatin 2025. Biographie, Chronologie, Repertoire und Spielzeit 2026/27.",
-    "fr": "Karolina Bengtsson, soprano suédoise originaire de Huseby en Småland. Membre de la troupe de solistes de l'Oper Frankfurt, lauréate du Birgit Nilsson Stipendium 2025. Biographie, chronologie, répertoire et saison 2026/27."
+    "en": "Karolina Bengtsson, Swedish soprano. Member of the soloist ensemble at Oper Frankfurt, Birgit Nilsson Stipendiat 2025. Biography, chronology, repertoire and season 2026/27.",
+    "sv": "Karolina Bengtsson, svensk sopran. Medlem av Oper Frankfurts solistensemble, Birgit Nilsson-stipendiat 2025. Biografi, kronologi, repertoar och säsongen 2026/27.",
+    "de": "Karolina Bengtsson, schwedische Sopranistin. Mitglied des Solistenensembles der Oper Frankfurt, Birgit-Nilsson-Stipendiatin 2025. Biographie, Chronologie, Repertoire und Spielzeit 2026/27.",
+    "fr": "Karolina Bengtsson, soprano suédoise. Membre de la troupe de solistes de l'Oper Frankfurt, lauréate du Birgit Nilsson Stipendium 2025. Biographie, chronologie, répertoire et saison 2026/27."
   },
   "nav": {
     "news": {
@@ -116,10 +116,10 @@ const COPY = {
   "opening": {
     "house": "Oper Frankfurt",
     "from": {
-      "en": "From Huseby · Oper Frankfurt",
-      "sv": "Från Huseby · Oper Frankfurt",
-      "de": "Aus Huseby · Oper Frankfurt",
-      "fr": "De Huseby · Oper Frankfurt"
+      "en": "Oper Frankfurt",
+      "sv": "Oper Frankfurt",
+      "de": "Oper Frankfurt",
+      "fr": "Oper Frankfurt"
     },
     "lineShort": {
       "en": "Swedish soprano. Birgit Nilsson Stipendiat 2025.",
@@ -191,10 +191,10 @@ const COPY = {
       "fr": "Actualités"
     },
     "note": {
-      "en": "The latest about the soprano from Huseby",
-      "sv": "Det senaste om sopranen från Huseby",
-      "de": "Das Neueste über die Sopranistin aus Huseby",
-      "fr": "Les dernières nouvelles de la soprano de Huseby"
+      "en": "The latest news and engagements",
+      "sv": "Det senaste om Karolina Bengtsson",
+      "de": "Das Neueste über Karolina Bengtsson",
+      "fr": "Les dernières nouvelles de Karolina Bengtsson"
     }
   },
   "bio": {
@@ -205,10 +205,10 @@ const COPY = {
       "fr": "Biographie"
     },
     "note": {
-      "en": "From Huseby to Frankfurt",
-      "sv": "Från Huseby till Frankfurt",
-      "de": "Von Huseby nach Frankfurt",
-      "fr": "De Huseby à Francfort"
+      "en": "Biography & background",
+      "sv": "Biografi & bakgrund",
+      "de": "Biographie & Hintergrund",
+      "fr": "Biographie & parcours"
     },
     "p1": {
       "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, a mill village in Småland in southern Sweden. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s degree with Barbara Bonney at the Universität Mozarteum Salzburg in 2023; Wolfgang Holzmair guided her lied interpretation.",
@@ -223,16 +223,16 @@ const COPY = {
       "fr": "Entrée à l'Opera Studio de l'Oper Frankfurt en 2021, elle est membre de la troupe de solistes depuis 2023. Ses engagements l'ont menée à la Bayerische Staatsoper de Munich, au Festival d’Aix-en-Provence et aux Innsbrucker Festwochen, ainsi qu'en concert auprès de l'Orchestre symphonique de la Radio suédoise et de l'Orchestre symphonique de Göteborg."
     },
     "figcap": {
-      "en": "Småland, Sweden",
-      "sv": "Småland, Sverige",
-      "de": "Småland, Schweden",
-      "fr": "Småland, Suède"
+      "en": "Portrait, Tore Sjöqvist",
+      "sv": "Foto: Tore Sjöqvist",
+      "de": "Porträt, Tore Sjöqvist",
+      "fr": "Portrait, Tore Sjöqvist"
     },
     "alt": {
-      "en": "Karolina Bengtsson by a lake in Småland",
-      "sv": "Karolina Bengtsson vid en sjö i Småland",
-      "de": "Karolina Bengtsson an einem See in Småland",
-      "fr": "Karolina Bengtsson au bord d'un lac du Småland"
+      "en": "Karolina Bengtsson by a lake",
+      "sv": "Karolina Bengtsson vid en sjö",
+      "de": "Karolina Bengtsson an einem See",
+      "fr": "Karolina Bengtsson au bord d'un lac"
     },
     "quote": {
       "en": "What an honour! It feels incredible to be awarded the Birgit Nilsson Stipendium. Beyond the honour, it is also a recognition and an encouragement to keep following my dream.",
@@ -542,10 +542,10 @@ const COPY = {
       "fr": "Galerie"
     },
     "note": {
-      "en": "On stage and in Småland",
-      "sv": "På scen och i Småland",
-      "de": "Auf der Bühne und in Småland",
-      "fr": "Sur scène et en Småland"
+      "en": "On stage and in portrait",
+      "sv": "På scen och i porträtt",
+      "de": "Auf der Bühne und im Porträt",
+      "fr": "Sur scène et en portrait"
     },
     "stage": {
       "en": "On stage",
@@ -553,7 +553,7 @@ const COPY = {
       "de": "Auf der Bühne",
       "fr": "Sur scène"
     },
-    "smaland": "Småland",
+    "smaland": "Porträtt",
     "throneAlt": {
       "en": "Karolina Bengtsson as Belisa in In seinem Garten liebt Don Perlimplín Belisa, Oper Frankfurt",
       "sv": "Karolina Bengtsson som Belisa i In seinem Garten liebt Don Perlimplín Belisa, Oper Frankfurt",
@@ -681,10 +681,10 @@ const COPY = {
       "fr": "Photos : Tore Sjöqvist"
     },
     "smaland": {
-      "en": "Småland. Photo: Tore Sjöqvist",
-      "sv": "Småland. Foto: Tore Sjöqvist",
-      "de": "Småland. Foto: Tore Sjöqvist",
-      "fr": "Småland. Photo : Tore Sjöqvist"
+      "en": "Photo: Tore Sjöqvist",
+      "sv": "Foto: Tore Sjöqvist",
+      "de": "Foto: Tore Sjöqvist",
+      "fr": "Photo : Tore Sjöqvist"
     },
     "stage": {
       "en": "Così fan tutte, Oper Frankfurt. Photo: Barbara Aumüller",
