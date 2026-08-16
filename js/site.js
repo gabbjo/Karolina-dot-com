@@ -2436,8 +2436,6 @@ function prefersReducedMotion() {
   return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-var langFadeTimer = 0;
-
 function applyLang(lang, opts) {
   var restoreScroll = opts && opts.restoreScroll;
   var y = restoreScroll ? window.scrollY : 0;
@@ -2457,24 +2455,6 @@ function applyLang(lang, opts) {
 
 function setLang(lang, opts) {
   var changing = lang !== currentLang;
-  var animate = opts && opts.animate && changing;
-  var main = document.getElementById("main");
-  if (langFadeTimer) {
-    window.clearTimeout(langFadeTimer);
-    langFadeTimer = 0;
-  }
-  if (animate && main && !prefersReducedMotion()) {
-    main.classList.add("is-lang-fading");
-    langFadeTimer = window.setTimeout(function () {
-      langFadeTimer = 0;
-      applyLang(lang, { restoreScroll: true, syncUrl: true });
-      requestAnimationFrame(function () {
-        main.classList.remove("is-lang-fading");
-      });
-    }, 140);
-    return;
-  }
-  if (main) main.classList.remove("is-lang-fading");
   applyLang(lang, { restoreScroll: changing, syncUrl: changing });
 }
 
@@ -2633,7 +2613,7 @@ document.addEventListener("DOMContentLoaded", function () {
   currentLang = detectLang();
   document.querySelectorAll(".lang button").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      setLang(btn.getAttribute("data-lang"), { animate: true });
+      setLang(btn.getAttribute("data-lang"));
     });
   });
   setupMenu();

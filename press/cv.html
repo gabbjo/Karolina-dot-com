@@ -6,28 +6,31 @@
   <title>Karolina Bengtsson, CV</title>
   <meta name="robots" content="noindex">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="../fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/playfair-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/source-sans-3-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/site.css?v=20260816g">
-  <link rel="stylesheet" href="../css/fonts-late.css?v=20260816g" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/fonts-late.css?v=20260816g"></noscript>
+  <link rel="stylesheet" href="../css/site.css?v=20260816i">
+  <link rel="stylesheet" href="../css/fonts-late.css?v=20260816i" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/fonts-late.css?v=20260816i"></noscript>
   <style>
-    body { background: #fff8ee; }
+    body { background: #faf9f6; color: #111110; }
     .cv-page { width: min(100% - 2.4rem, 42rem); margin: 2.5rem auto 4rem; }
-    .cv-tools { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0 0 1.75rem; }
+    .cv-tools { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin: 0 0 2rem; border-bottom: 1px solid rgba(17, 17, 16, 0.12); padding-bottom: 1rem; }
     .cv-tools a, .cv-tools button {
       appearance: none; border: 0; background: none; padding: 0;
-      font: 600 0.85rem/1.2 "Source Sans 3", Helvetica, sans-serif;
-      color: #9c2d2a; cursor: pointer; min-height: 44px;
+      font: 600 0.8rem/1.2 "Source Sans 3", -apple-system, sans-serif;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: #111110; cursor: pointer; min-height: 44px; display: inline-flex; align-items: center;
+      transition: color 0.15s ease;
     }
+    .cv-tools a:hover, .cv-tools button:hover { color: #c8102e; }
     .cv[hidden] { display: none; }
-    .cv h1 { margin: 0; font-family: "Fraunces", Georgia, serif; font-size: 2.4rem; line-height: 1.05; }
-    .cv .voice { margin: 0.35rem 0 1.5rem; color: #6e4f38; }
-    .cv h2 { margin: 1.4rem 0 0.45rem; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #9c2d2a; }
-    .cv p, .cv li { margin: 0 0 0.45rem; }
+    .cv h1 { margin: 0; font-family: "Playfair Display", "Didot", "Bodoni MT", Georgia, serif; font-size: 2.4rem; font-weight: 600; line-height: 1.05; }
+    .cv .voice { margin: 0.35rem 0 1.75rem; color: #56514b; font-size: 0.95rem; line-height: 1.5; }
+    .cv h2 { margin: 1.75rem 0 0.55rem; font-size: 0.76rem; letter-spacing: 0.16em; text-transform: uppercase; color: #111110; font-weight: 700; border-bottom: 1px solid rgba(17, 17, 16, 0.12); padding-bottom: 0.3rem; }
+    .cv p, .cv li { margin: 0 0 0.5rem; line-height: 1.6; }
     .cv ul { margin: 0; padding: 0; list-style: none; }
-    .cv li { display: flex; flex-wrap: wrap; gap: 0.15rem 0.65rem; }
-    .cv .when { flex: 0 0 7.5rem; color: #6e4f38; font-size: 0.9rem; }
+    .cv li { display: flex; flex-wrap: wrap; gap: 0.15rem 0.85rem; }
+    .cv .when { flex: 0 0 8.5rem; color: #56514b; font-size: 0.88rem; }
     @media print {
       .cv-tools { display: none; }
       body { background: #ffffff; }
