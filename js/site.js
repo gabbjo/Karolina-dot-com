@@ -58,10 +58,10 @@ const COPY = {
     "fr": "Karolina Bengtsson, soprano"
   },
   "desc": {
-    "en": "Karolina Bengtsson, Swedish soprano from Huseby, Småland. Member of the soloist ensemble at Oper Frankfurt, Birgit Nilsson Stipendiat 2025. Biography, chronology, repertoire and season 2026/27.",
-    "sv": "Karolina Bengtsson, svensk sopran från Huseby i Småland. Medlem av Oper Frankfurts solistensemble, Birgit Nilsson-stipendiat 2025. Biografi, kronologi, repertoar och säsongen 2026/27.",
-    "de": "Karolina Bengtsson, schwedische Sopranistin aus Huseby in Småland. Mitglied des Solistenensembles der Oper Frankfurt, Birgit-Nilsson-Stipendiatin 2025. Biographie, Chronologie, Repertoire und Spielzeit 2026/27.",
-    "fr": "Karolina Bengtsson, soprano suédoise originaire de Huseby en Småland. Membre de la troupe de solistes de l'Oper Frankfurt, lauréate du Birgit Nilsson Stipendium 2025. Biographie, chronologie, répertoire et saison 2026/27."
+    "en": "Karolina Bengtsson, Swedish soprano. Member of the soloist ensemble at Oper Frankfurt, Birgit Nilsson Stipendiat 2025. Biography, chronology, repertoire and season 2026/27.",
+    "sv": "Karolina Bengtsson, svensk sopran. Medlem av Oper Frankfurts solistensemble, Birgit Nilsson-stipendiat 2025. Biografi, kronologi, repertoar och säsongen 2026/27.",
+    "de": "Karolina Bengtsson, schwedische Sopranistin. Mitglied des Solistenensembles der Oper Frankfurt, Birgit-Nilsson-Stipendiatin 2025. Biographie, Chronologie, Repertoire und Spielzeit 2026/27.",
+    "fr": "Karolina Bengtsson, soprano suédoise. Membre de la troupe de solistes de l'Oper Frankfurt, lauréate du Birgit Nilsson Stipendium 2025. Biographie, chronologie, répertoire et saison 2026/27."
   },
   "nav": {
     "news": {
@@ -106,6 +106,12 @@ const COPY = {
       "de": "Galerie",
       "fr": "Galerie"
     },
+    "press": {
+      "en": "Press",
+      "sv": "Press",
+      "de": "Presse",
+      "fr": "Presse"
+    },
     "contact": {
       "en": "Contact",
       "sv": "Kontakt",
@@ -116,16 +122,16 @@ const COPY = {
   "opening": {
     "house": "Oper Frankfurt",
     "from": {
-      "en": "From Huseby · Oper Frankfurt",
-      "sv": "Från Huseby · Oper Frankfurt",
-      "de": "Aus Huseby · Oper Frankfurt",
-      "fr": "De Huseby · Oper Frankfurt"
+      "en": "Oper Frankfurt",
+      "sv": "Oper Frankfurt",
+      "de": "Oper Frankfurt",
+      "fr": "Oper Frankfurt"
     },
     "lineShort": {
-      "en": "Swedish soprano. Birgit Nilsson Stipendiat 2025.",
-      "sv": "Svensk sopran. Birgit Nilsson-stipendiat 2025.",
-      "de": "Schwedische Sopranistin. Birgit-Nilsson-Stipendiatin 2025.",
-      "fr": "Soprano suédoise. Lauréate du Birgit Nilsson Stipendium 2025."
+      "en": "Birgit Nilsson Stipendiat 2025",
+      "sv": "Birgit Nilsson-stipendiat 2025",
+      "de": "Birgit-Nilsson-Stipendiatin 2025",
+      "fr": "Lauréate du Birgit Nilsson Stipendium 2025"
     },
     "ctaSeason": {
       "en": "See the season",
@@ -140,16 +146,16 @@ const COPY = {
       "fr": "Billets"
     },
     "lead1": {
-      "en": "She swears eternal fidelity again.",
-      "sv": "Hon svär evig trohet igen.",
-      "de": "Sie schwört wieder ewige Treue.",
-      "fr": "Elle jure encore fidélité éternelle."
+      "en": "This season",
+      "sv": "Denna säsong",
+      "de": "In dieser Spielzeit",
+      "fr": "Cette saison"
     },
     "lead2": {
-      "en": "Night after night.",
-      "sv": "Kväll efter kväll.",
-      "de": "Abend für Abend.",
-      "fr": "Soir après soir."
+      "en": "at Oper Frankfurt",
+      "sv": "på Oper Frankfurt",
+      "de": "an der Oper Frankfurt",
+      "fr": "à l'Oper Frankfurt"
     },
     "line": {
       "en": "in <em>Così fan tutte</em> at Oper Frankfurt, 23 Aug – 21 Jan",
@@ -191,10 +197,10 @@ const COPY = {
       "fr": "Actualités"
     },
     "note": {
-      "en": "The latest about the soprano from Huseby",
-      "sv": "Det senaste om sopranen från Huseby",
-      "de": "Das Neueste über die Sopranistin aus Huseby",
-      "fr": "Les dernières nouvelles de la soprano de Huseby"
+      "en": "The latest news and engagements",
+      "sv": "Det senaste om Karolina Bengtsson",
+      "de": "Das Neueste über Karolina Bengtsson",
+      "fr": "Les dernières nouvelles de Karolina Bengtsson"
     }
   },
   "bio": {
@@ -205,34 +211,34 @@ const COPY = {
       "fr": "Biographie"
     },
     "note": {
-      "en": "From Huseby to Frankfurt",
-      "sv": "Från Huseby till Frankfurt",
-      "de": "Von Huseby nach Frankfurt",
-      "fr": "De Huseby à Francfort"
+      "en": "Biography & background",
+      "sv": "Biografi & bakgrund",
+      "de": "Biographie & Hintergrund",
+      "fr": "Biographie & parcours"
     },
     "p1": {
-      "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, a mill village in Småland in southern Sweden. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s degree with Barbara Bonney at the Universität Mozarteum Salzburg in 2023; Wolfgang Holzmair guided her lied interpretation.",
-      "sv": "Karolina Bengtsson föddes 1997 och växte upp i Huseby, en bruksort i Småland. Hon studerade vid Det Kongelige Danske Musikkonservatorium i Köpenhamn och tog 2023 sin masterexamen för Barbara Bonney vid Universität Mozarteum i Salzburg; i romansinterpretation handleddes hon av Wolfgang Holzmair.",
-      "de": "Karolina Bengtsson, geboren 1997, wuchs in Huseby auf, einem historischen Hüttenort in Småland in Südschweden. Sie studierte an der Königlich Dänischen Musikakademie in Kopenhagen und schloss 2023 ihr Masterstudium bei Barbara Bonney an der Universität Mozarteum Salzburg ab; im Fach Lied arbeitete sie mit Wolfgang Holzmair.",
-      "fr": "Karolina Bengtsson est née en 1997 et a grandi à Huseby, ancien village de forges du Småland, dans le sud de la Suède. Elle a étudié à l'Académie royale danoise de musique de Copenhague et a obtenu en 2023 son master auprès de Barbara Bonney à l'Universität Mozarteum de Salzbourg ; Wolfgang Holzmair l'a guidée dans l'interprétation du lied."
+      "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, Småland. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s with Barbara Bonney at the Mozarteum in Salzburg in 2023. Wolfgang Holzmair taught her lied.",
+      "sv": "Karolina Bengtsson föddes 1997 och växte upp i Huseby, en bruksort i Småland. Hon studerade vid Det Kongelige Danske Musikkonservatorium i Köpenhamn och tog master för Barbara Bonney vid Mozarteum i Salzburg 2023. I romans arbetade hon med Wolfgang Holzmair.",
+      "de": "Karolina Bengtsson, geboren 1997, wuchs in Huseby in Småland auf. Sie studierte an der Königlich Dänischen Musikakademie in Kopenhagen und machte 2023 ihren Master bei Barbara Bonney am Mozarteum in Salzburg. Lied bei Wolfgang Holzmair.",
+      "fr": "Karolina Bengtsson est née en 1997 et a grandi à Huseby, dans le Småland. Elle a étudié à l'Académie royale danoise de musique à Copenhague et a passé son master en 2023 avec Barbara Bonney au Mozarteum de Salzbourg. Le lied, elle l'a travaillé avec Wolfgang Holzmair."
     },
     "p2": {
-      "en": "She joined the Opera Studio of Oper Frankfurt in 2021 and has been a member of the soloist ensemble since 2023. Guest engagements have taken her to the Bayerische Staatsoper in Munich, the Festival d’Aix-en-Provence and the Innsbruck Festival of Early Music, and in concert to the Swedish Radio Symphony Orchestra and the Gothenburg Symphony Orchestra.",
-      "sv": "2021 kom hon till Oper Frankfurts operastudio och sedan 2023 är hon medlem av husets solistensemble. Gästspel har fört henne till Bayerische Staatsoper i München, Festival d’Aix-en-Provence och Innsbrucker Festwochen, och i konsertsammanhang till Sveriges Radios symfoniorkester och Göteborgs Symfoniker.",
-      "de": "2021 kam sie ins Opernstudio der Oper Frankfurt, seit 2023 ist sie Mitglied des Solistenensembles. Gastengagements führten sie an die Bayerische Staatsoper in München, zum Festival d’Aix-en-Provence und zu den Innsbrucker Festwochen der Alten Musik, im Konzert zum Schwedischen Rundfunk-Sinfonieorchester und zu den Göteborger Symphonikern.",
-      "fr": "Entrée à l'Opera Studio de l'Oper Frankfurt en 2021, elle est membre de la troupe de solistes depuis 2023. Ses engagements l'ont menée à la Bayerische Staatsoper de Munich, au Festival d’Aix-en-Provence et aux Innsbrucker Festwochen, ainsi qu'en concert auprès de l'Orchestre symphonique de la Radio suédoise et de l'Orchestre symphonique de Göteborg."
+      "en": "She came to the Opera Studio in Frankfurt in 2021 and has been in the ensemble since 2023. She has sung at the Bayerische Staatsoper, the Festival d’Aix-en-Provence and the Innsbruck Festival of Early Music, and in concert with the Swedish Radio Symphony Orchestra and the Gothenburg Symphony Orchestra.",
+      "sv": "2021 kom hon till operastudion i Frankfurt. Sedan 2023 sjunger hon i solistensemblen. Hon har gästat Bayerische Staatsoper, Festival d’Aix-en-Provence och Innsbrucker Festwochen, och sjungit med Sveriges Radios symfoniorkester och Göteborgs Symfoniker.",
+      "de": "2021 kam sie ins Opernstudio in Frankfurt. Seit 2023 singt sie im Solistenensemble. Sie war an der Bayerischen Staatsoper, beim Festival d’Aix-en-Provence und bei den Innsbrucker Festwochen, im Konzert beim Schwedischen Rundfunk-Sinfonieorchester und bei den Göteborger Symphonikern.",
+      "fr": "Elle est arrivée à l'Opera Studio de Francfort en 2021 et chante dans la troupe depuis 2023. Elle a été à la Bayerische Staatsoper, au Festival d’Aix-en-Provence et aux Innsbrucker Festwochen, et en concert avec l'Orchestre symphonique de la Radio suédoise et l'Orchestre symphonique de Göteborg."
     },
     "figcap": {
-      "en": "Småland, Sweden",
-      "sv": "Småland, Sverige",
-      "de": "Småland, Schweden",
-      "fr": "Småland, Suède"
+      "en": "Portrait, Tore Sjöqvist",
+      "sv": "Foto: Tore Sjöqvist",
+      "de": "Porträt, Tore Sjöqvist",
+      "fr": "Portrait, Tore Sjöqvist"
     },
     "alt": {
-      "en": "Karolina Bengtsson by a lake in Småland",
-      "sv": "Karolina Bengtsson vid en sjö i Småland",
-      "de": "Karolina Bengtsson an einem See in Småland",
-      "fr": "Karolina Bengtsson au bord d'un lac du Småland"
+      "en": "Karolina Bengtsson by a lake",
+      "sv": "Karolina Bengtsson vid en sjö",
+      "de": "Karolina Bengtsson an einem See",
+      "fr": "Karolina Bengtsson au bord d'un lac"
     },
     "quote": {
       "en": "What an honour! It feels incredible to be awarded the Birgit Nilsson Stipendium. Beyond the honour, it is also a recognition and an encouragement to keep following my dream.",
@@ -381,10 +387,10 @@ const COPY = {
   },
   "season": {
     "title": {
-      "en": "Season",
-      "sv": "Säsong",
-      "de": "Spielzeit",
-      "fr": "Saison"
+      "en": "Season 2026/27",
+      "sv": "Säsong 2026/27",
+      "de": "Spielzeit 2026/27",
+      "fr": "Saison 2026/27"
     },
     "note": {
       "en": "Spielzeit 2026/27",
@@ -411,10 +417,10 @@ const COPY = {
       "fr": "Karolina Bengtsson en Fiordiligi dans Così fan tutte, Oper Frankfurt"
     },
     "noteText": {
-      "en": "All performances at Oper Frankfurt. Tickets and full dates at ",
-      "sv": "Samtliga föreställningar på Oper Frankfurt. Biljetter och alla datum på ",
-      "de": "Alle Vorstellungen an der Oper Frankfurt. Karten und alle Termine auf ",
-      "fr": "Toutes les représentations à l'Oper Frankfurt. Billets et calendrier complet sur "
+      "en": "Tickets open the Oper Frankfurt page for that production.",
+      "sv": "Biljettlänken går till respektive produktion på Oper Frankfurt.",
+      "de": "Die Kartenlinks führen zur jeweiligen Produktion der Oper Frankfurt.",
+      "fr": "Les liens billets ouvrent la page de chaque production à l'Oper Frankfurt."
     },
     "venue": "Oper Frankfurt",
     "colDate": {
@@ -532,6 +538,24 @@ const COPY = {
       "sv": "Ladda filmen: Ascanio in Alba",
       "de": "Film laden: Ascanio in Alba",
       "fr": "Charger le film : Ascanio in Alba"
+    },
+    "listenSpotify": {
+      "en": "Listen on Spotify",
+      "sv": "Lyssna på Spotify",
+      "de": "Auf Spotify hören",
+      "fr": "Écouter sur Spotify"
+    },
+    "playHere": {
+      "en": "Play here",
+      "sv": "Spela här",
+      "de": "Hier abspielen",
+      "fr": "Lire ici"
+    },
+    "playFilm": {
+      "en": "Play",
+      "sv": "Spela",
+      "de": "Abspielen",
+      "fr": "Lire"
     }
   },
   "gallery": {
@@ -542,10 +566,10 @@ const COPY = {
       "fr": "Galerie"
     },
     "note": {
-      "en": "On stage and in Småland",
-      "sv": "På scen och i Småland",
-      "de": "Auf der Bühne und in Småland",
-      "fr": "Sur scène et en Småland"
+      "en": "On stage and in portrait",
+      "sv": "På scen och i porträtt",
+      "de": "Auf der Bühne und im Porträt",
+      "fr": "Sur scène et en portrait"
     },
     "stage": {
       "en": "On stage",
@@ -553,7 +577,7 @@ const COPY = {
       "de": "Auf der Bühne",
       "fr": "Sur scène"
     },
-    "smaland": "Småland",
+    "smaland": "Porträtt",
     "throneAlt": {
       "en": "Karolina Bengtsson as Belisa in In seinem Garten liebt Don Perlimplín Belisa, Oper Frankfurt",
       "sv": "Karolina Bengtsson som Belisa i In seinem Garten liebt Don Perlimplín Belisa, Oper Frankfurt",
@@ -603,10 +627,10 @@ const COPY = {
       "fr": "Karolina Bengtsson en Fiordiligi dans Così fan tutte, Oper Frankfurt"
     },
     "viewFull": {
-      "en": "View complete gallery",
-      "sv": "Visa hela galleriet",
-      "de": "Vollständige Galerie",
-      "fr": "Voir la galerie complète"
+      "en": "Portraits",
+      "sv": "Porträtt",
+      "de": "Porträts",
+      "fr": "Portraits"
     }
   },
   "contact": {
@@ -653,10 +677,90 @@ const COPY = {
       "fr": "Calendrier sur Operabase"
     },
     "press": {
-      "en": "For press material, full repertoire and reviews, please contact the management.",
-      "sv": "För pressmaterial, fullständig repertoar och recensioner, kontakta management.",
-      "de": "Pressematerial, vollständiges Repertoire und Kritiken über das Management.",
-      "fr": "Dossier de presse, répertoire complet et critiques auprès du management."
+      "en": "Press photos, biography and CV are in the <a href=\"#press\">press section</a>. For other material, contact the management.",
+      "sv": "Pressbilder, biografi och CV finns under <a href=\"#press\">Press</a>. Övrigt material via management.",
+      "de": "Pressefotos, Biographie und Lebenslauf finden sich unter <a href=\"#press\">Presse</a>. Weiteres Material über das Management.",
+      "fr": "Photos de presse, biographie et CV se trouvent dans la rubrique <a href=\"#press\">Presse</a>. Pour tout autre document, s'adresser au management."
+    }
+  },
+  "press": {
+    "title": {
+      "en": "Press",
+      "sv": "Press",
+      "de": "Presse",
+      "fr": "Presse"
+    },
+    "lead": {
+      "en": "Short and long biography, CV and stage photos. Credit the photographer.",
+      "sv": "Kort och lång biografi, CV och scenbilder. Skriv fotografens namn.",
+      "de": "Kurze und lange Biographie, Lebenslauf und Bühnenfotos. Den Fotografen bitte nennen.",
+      "fr": "Biographie courte et longue, CV et photos de scène. Indiquer le nom du photographe."
+    },
+    "shortTitle": {
+      "en": "Short biography",
+      "sv": "Kort biografi",
+      "de": "Kurzbiographie",
+      "fr": "Biographie courte"
+    },
+    "longTitle": {
+      "en": "Long biography",
+      "sv": "Lång biografi",
+      "de": "Langbiographie",
+      "fr": "Biographie longue"
+    },
+    "cvTitle": {
+      "en": "Curriculum vitae",
+      "sv": "CV",
+      "de": "Lebenslauf",
+      "fr": "CV"
+    },
+    "photosTitle": {
+      "en": "Press photographs",
+      "sv": "Pressbilder",
+      "de": "Pressefotos",
+      "fr": "Photos de presse"
+    },
+    "download": {
+      "en": "Download",
+      "sv": "Ladda ner",
+      "de": "Download",
+      "fr": "Télécharger"
+    },
+    "downloadShort": {
+      "en": "Download short biography",
+      "sv": "Ladda ner kort biografi",
+      "de": "Kurzbiographie herunterladen",
+      "fr": "Télécharger la biographie courte"
+    },
+    "downloadLong": {
+      "en": "Download long biography",
+      "sv": "Ladda ner lång biografi",
+      "de": "Langbiographie herunterladen",
+      "fr": "Télécharger la biographie longue"
+    },
+    "openCv": {
+      "en": "Open CV",
+      "sv": "Öppna CV",
+      "de": "Lebenslauf öffnen",
+      "fr": "Ouvrir le CV"
+    },
+    "short": {
+      "en": "Karolina Bengtsson is a soprano in the ensemble at Oper Frankfurt. She received the Birgit Nilsson Stipendium in 2025. In Frankfurt in 2026/27 she sings Fiordiligi in Così fan tutte, the title role in Zaide, Gretel in Hänsel und Gretel and Oberto in Alcina. First record: Traetta, Ifigenia in Tauride, Les Talens Lyriques, Christophe Rousset (Aparté, 2026). Bestenliste, Preis der deutschen Schallplattenkritik.",
+      "sv": "Karolina Bengtsson är sopran i ensemblen vid Oper Frankfurt. Hon fick Birgit Nilsson-stipendiet 2025. I Frankfurt 2026/27 sjunger hon Fiordiligi i Così fan tutte, titelrollen i Zaide, Gretel i Hänsel und Gretel och Oberto i Alcina. Första skivan: Traetta, Ifigenia in Tauride, Les Talens Lyriques, Christophe Rousset (Aparté, 2026). Bestenliste, Preis der deutschen Schallplattenkritik.",
+      "de": "Karolina Bengtsson ist Sopranistin im Ensemble der Oper Frankfurt. 2025 erhielt sie das Birgit-Nilsson-Stipendium. In Frankfurt singt sie 2026/27 Fiordiligi in Così fan tutte, die Titelpartie in Zaide, Gretel in Hänsel und Gretel und Oberto in Alcina. Erste Platte: Traetta, Ifigenia in Tauride, Les Talens Lyriques, Christophe Rousset (Aparté, 2026). Bestenliste, Preis der deutschen Schallplattenkritik.",
+      "fr": "Karolina Bengtsson est soprano à l'Oper Frankfurt. Elle a reçu le Birgit Nilsson Stipendium en 2025. À Francfort en 2026/27, elle chante Fiordiligi dans Così fan tutte, le rôle-titre de Zaide, Gretel dans Hänsel und Gretel et Oberto dans Alcina. Premier disque : Traetta, Ifigenia in Tauride, Les Talens Lyriques, Christophe Rousset (Aparté, 2026). Bestenliste, Preis der deutschen Schallplattenkritik."
+    },
+    "long": {
+      "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, Småland. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s with Barbara Bonney at the Mozarteum in Salzburg in 2023. Wolfgang Holzmair taught her lied.\n\nShe came to the Opera Studio in Frankfurt in 2021 and has been in the ensemble since 2023. She has sung at the Bayerische Staatsoper, the Festival d’Aix-en-Provence and the Innsbruck Festival of Early Music, and in concert with the Swedish Radio Symphony Orchestra and the Gothenburg Symphony Orchestra.\n\nIn 2025 she received the Birgit Nilsson Stipendium. That summer she sang Camille in Louise in Aix and Dori in Traetta’s Ifigenia in Tauride in Innsbruck. The live recording came out on Aparté in 2026, with Les Talens Lyriques and Christophe Rousset. It is on the Bestenliste of the Preis der deutschen Schallplattenkritik and was reviewed in Gramophone.\n\nIn Frankfurt in 2026/27: Fiordiligi in Così fan tutte, the title role in Zaide, Gretel in Hänsel und Gretel and Oberto in Alcina.",
+      "sv": "Karolina Bengtsson föddes 1997 och växte upp i Huseby, en bruksort i Småland. Hon studerade vid Det Kongelige Danske Musikkonservatorium i Köpenhamn och tog master för Barbara Bonney vid Mozarteum i Salzburg 2023. I romans arbetade hon med Wolfgang Holzmair.\n\n2021 kom hon till operastudion i Frankfurt. Sedan 2023 sjunger hon i solistensemblen. Hon har gästat Bayerische Staatsoper, Festival d’Aix-en-Provence och Innsbrucker Festwochen, och sjungit med Sveriges Radios symfoniorkester och Göteborgs Symfoniker.\n\n2025 fick hon Birgit Nilsson-stipendiet. Samma sommar sjöng hon Camille i Louise i Aix och Dori i Traettas Ifigenia in Tauride i Innsbruck. Liveinspelningen kom på Aparté 2026, med Les Talens Lyriques och Christophe Rousset. Den togs upp på Bestenliste hos Preis der deutschen Schallplattenkritik och recenserades i Gramophone.\n\nI Frankfurt 2026/27: Fiordiligi i Così fan tutte, titelrollen i Zaide, Gretel i Hänsel und Gretel och Oberto i Alcina.",
+      "de": "Karolina Bengtsson, geboren 1997, wuchs in Huseby in Småland auf. Sie studierte an der Königlich Dänischen Musikakademie in Kopenhagen und machte 2023 ihren Master bei Barbara Bonney am Mozarteum in Salzburg. Lied bei Wolfgang Holzmair.\n\n2021 kam sie ins Opernstudio in Frankfurt. Seit 2023 singt sie im Solistenensemble. Sie war an der Bayerischen Staatsoper, beim Festival d’Aix-en-Provence und bei den Innsbrucker Festwochen, im Konzert beim Schwedischen Rundfunk-Sinfonieorchester und bei den Göteborger Symphonikern.\n\n2025 erhielt sie das Birgit-Nilsson-Stipendium. Im Sommer sang sie Camille in Louise in Aix und Dori in Traettas Ifigenia in Tauride in Innsbruck. Die Liveaufnahme erschien 2026 bei Aparté, mit Les Talens Lyriques und Christophe Rousset. Sie steht auf der Bestenliste des Preises der deutschen Schallplattenkritik und wurde in Gramophone besprochen.\n\nIn Frankfurt 2026/27: Fiordiligi in Così fan tutte, die Titelpartie in Zaide, Gretel in Hänsel und Gretel und Oberto in Alcina.",
+      "fr": "Karolina Bengtsson est née en 1997 et a grandi à Huseby, dans le Småland. Elle a étudié à l'Académie royale danoise de musique à Copenhague et a passé son master en 2023 avec Barbara Bonney au Mozarteum de Salzbourg. Le lied, elle l'a travaillé avec Wolfgang Holzmair.\n\nElle est arrivée à l'Opera Studio de Francfort en 2021 et chante dans la troupe depuis 2023. Elle a été à la Bayerische Staatsoper, au Festival d’Aix-en-Provence et aux Innsbrucker Festwochen, et en concert avec l'Orchestre symphonique de la Radio suédoise et l'Orchestre symphonique de Göteborg.\n\nEn 2025, elle a reçu le Birgit Nilsson Stipendium. Cet été-là, elle a chanté Camille dans Louise à Aix et Dori dans Ifigenia in Tauride de Traetta à Innsbruck. L'enregistrement live est paru chez Aparté en 2026, avec Les Talens Lyriques et Christophe Rousset. Il est sur la Bestenliste du Preis der deutschen Schallplattenkritik et a été chroniqué dans Gramophone.\n\nÀ Francfort en 2026/27 : Fiordiligi dans Così fan tutte, le rôle-titre de Zaide, Gretel dans Hänsel und Gretel et Oberto dans Alcina."
+    },
+    "usage": {
+      "en": "Stage photos: Barbara Aumüller, Oper Frankfurt. Portrait: Tore Sjöqvist. More files via the management.",
+      "sv": "Scenbilder: Barbara Aumüller, Oper Frankfurt. Porträtt: Tore Sjöqvist. Fler filer via management.",
+      "de": "Bühnenfotos: Barbara Aumüller, Oper Frankfurt. Porträt: Tore Sjöqvist. Weitere Dateien über das Management.",
+      "fr": "Photos de scène : Barbara Aumüller, Oper Frankfurt. Portrait : Tore Sjöqvist. Autres fichiers auprès du management."
     }
   },
   "footer": {
@@ -681,10 +785,10 @@ const COPY = {
       "fr": "Photos : Tore Sjöqvist"
     },
     "smaland": {
-      "en": "Småland. Photo: Tore Sjöqvist",
-      "sv": "Småland. Foto: Tore Sjöqvist",
-      "de": "Småland. Foto: Tore Sjöqvist",
-      "fr": "Småland. Photo : Tore Sjöqvist"
+      "en": "Photo: Tore Sjöqvist",
+      "sv": "Foto: Tore Sjöqvist",
+      "de": "Foto: Tore Sjöqvist",
+      "fr": "Photo : Tore Sjöqvist"
     },
     "stage": {
       "en": "Così fan tutte, Oper Frankfurt. Photo: Barbara Aumüller",
@@ -719,7 +823,8 @@ const COPY = {
     "season": "V",
     "media": "VI",
     "gallery": "VII",
-    "contact": "VIII"
+    "press": "VIII",
+    "contact": "IX"
   }
 };
 
@@ -765,10 +870,10 @@ const NEWS = [
       "fr": "Parution du premier enregistrement"
     },
     "body": {
-      "en": "Aparté issues <em>Ifigenia in Tauride</em>, the world premiere recording of Traetta's opera, with Karolina as Dori. BBC Music Magazine gives it four stars; Gramophone reviews it in July. <a href=\"#media\">Hear it further down this page</a>.",
-      "sv": "Aparté ger ut <em>Ifigenia in Tauride</em>, världspremiärinspelningen av Traettas opera, med Karolina som Dori. BBC Music Magazine ger fyra stjärnor; Gramophone recenserar den i juli. <a href=\"#media\">Hör den längre ner på sidan</a>.",
-      "de": "Aparté veröffentlicht <em>Ifigenia in Tauride</em>, die Weltersteinspielung von Traettas Oper, mit Karolina als Dori. Das BBC Music Magazine vergibt vier Sterne; Gramophone bespricht die Aufnahme im Juli. <a href=\"#media\">Zu hören weiter unten auf dieser Seite</a>.",
-      "fr": "Aparté publie <em>Ifigenia in Tauride</em>, premier enregistrement mondial de l'opéra de Traetta, avec Karolina dans le rôle de Dori. BBC Music Magazine lui attribue quatre étoiles ; Gramophone le chronique en juillet. <a href=\"#media\">À écouter plus bas sur cette page</a>."
+      "en": "Aparté issued <em>Ifigenia in Tauride</em>, the world premiere recording of Traetta's opera, with Karolina as Dori. BBC Music Magazine gave it four stars; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone reviewed it in its July 2026 issue</a>. <a href=\"#media\">Hear it further down this page</a>.",
+      "sv": "Aparté gav ut <em>Ifigenia in Tauride</em>, världspremiärinspelningen av Traettas opera, med Karolina som Dori. BBC Music Magazine gav fyra stjärnor; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone recenserade den i julnumret 2026</a>. <a href=\"#media\">Hör den längre ner på sidan</a>.",
+      "de": "Aparté veröffentlichte <em>Ifigenia in Tauride</em>, die Weltersteinspielung von Traettas Oper, mit Karolina als Dori. Das BBC Music Magazine vergab vier Sterne; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone besprach die Aufnahme in der Juli-Ausgabe 2026</a>. <a href=\"#media\">Zu hören weiter unten auf dieser Seite</a>.",
+      "fr": "Aparté a publié <em>Ifigenia in Tauride</em>, premier enregistrement mondial de l'opéra de Traetta, avec Karolina dans le rôle de Dori. BBC Music Magazine lui a attribué quatre étoiles ; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone en a rendu compte dans son numéro de juillet 2026</a>. <a href=\"#media\">À écouter plus bas sur cette page</a>."
     }
   },
   {
@@ -1817,7 +1922,8 @@ const SEASON = [
       "sv": "Mozart, nypremiär",
       "de": "Mozart, Wiederaufnahme",
       "fr": "Mozart, reprise"
-    }
+    },
+    "of": "cosi"
   },
   {
     "dates": {
@@ -1834,7 +1940,9 @@ const SEASON = [
       "fr": "Rôle-titre"
     },
     "sub": "Mozart, Bockenheimer Depot",
-    "premiere": true
+    "premiere": true,
+    "venue": "Bockenheimer Depot",
+    "of": "zaide"
   },
   {
     "dates": {
@@ -1850,7 +1958,8 @@ const SEASON = [
       "sv": "Humperdinck, nypremiär",
       "de": "Humperdinck, Wiederaufnahme",
       "fr": "Humperdinck, reprise"
-    }
+    },
+    "of": "haensel"
   },
   {
     "dates": {
@@ -1866,9 +1975,46 @@ const SEASON = [
       "sv": "Händel, dirigent Julia Jones",
       "de": "Händel, Leitung Julia Jones",
       "fr": "Händel, direction Julia Jones"
-    }
+    },
+    "of": "alcina"
   }
 ];
+
+const OF = {
+  cosi: {
+    en: "https://www.oper-frankfurt.de/en/season-calendar/cosi-fan-tutte_4/",
+    de: "https://www.oper-frankfurt.de/de/spielplan/cosi-fan-tutte_4/"
+  },
+  zaide: {
+    en: "https://www.oper-frankfurt.de/en/season-calendar/zaide/",
+    de: "https://www.oper-frankfurt.de/de/spielplan/zaide/"
+  },
+  haensel: {
+    en: "https://www.oper-frankfurt.de/en/season-calendar/haensel-und-gretel_5/",
+    de: "https://www.oper-frankfurt.de/de/spielplan/haensel-und-gretel_5/"
+  },
+  alcina: {
+    en: "https://www.oper-frankfurt.de/en/season-calendar/alcina_2/",
+    de: "https://www.oper-frankfurt.de/de/spielplan/alcina_2/"
+  },
+  profile: {
+    en: "https://www.oper-frankfurt.de/en/ensemble/opera-studio/?detail=1144",
+    de: "https://www.oper-frankfurt.de/de/ensemble-gaeste-teams/opernstudio/?detail=1144"
+  }
+};
+
+const PRESS_PHOTOS = [
+  { file: "img/anna.jpg", thumb: "img/anna-480.webp", name: "Karolina-Bengtsson-Anna-Bluehen.jpg", credit: "credit.anna", alt: "gallery.annaAlt" },
+  { file: "img/belisa.jpg", thumb: "img/belisa-480.webp", name: "Karolina-Bengtsson-Belisa.jpg", credit: "credit.belisa", alt: "gallery.belisaAlt" },
+  { file: "img/cosi-brief.jpg", thumb: "img/cosi-brief-480.webp", name: "Karolina-Bengtsson-Fiordiligi.jpg", credit: "credit.stage", alt: "gallery.briefAlt" },
+  { file: "img/hero.jpg", thumb: "img/hero-480.webp", name: "Karolina-Bengtsson-portrait.jpg", credit: "credit.portrait", alt: "opening.portraitAlt" }
+];
+
+function ofHref(key, lang) {
+  var urls = OF[key];
+  if (!urls) return "";
+  return lang === "de" ? urls.de : urls.en;
+}
 
 function lookup(key) {
   var parts = key.split(".");
@@ -1986,6 +2132,7 @@ function renderNews(lang) {
   }).join("") + "</div>";
   host.innerHTML = splash + briefs;
   decorateLinks(host, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function entryHtml(entry, lang, prizeWord) {
@@ -2041,6 +2188,9 @@ function renderChronology(lang) {
       return yearBlockHtml(block, lang, prizeWord);
     }).join("");
   }
+  decorateLinks(host, lang);
+  if (fullHost) decorateLinks(fullHost, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function repRow(label, value) {
@@ -2086,65 +2236,109 @@ function renderRepertoire(lang) {
   var concertFull = document.getElementById("rep-concert-full");
   if (operaFull) operaFull.innerHTML = REP_OPERA.map(function (item) { return renderRepItem(item, lang, false); }).join("");
   if (concertFull) concertFull.innerHTML = REP_CONCERT.map(function (item) { return renderRepItem(item, lang, true); }).join("");
+  decorateLinks(operaHost, lang);
+  decorateLinks(concertHost, lang);
+  if (operaFull) decorateLinks(operaFull, lang);
+  if (concertFull) decorateLinks(concertFull, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function renderSeason(lang) {
   var host = document.getElementById("season-list");
   if (!host) return;
   var tickets = M(COPY.season.tickets, lang);
-  var venue = M(COPY.season.venue, lang);
-  var ticketHref = lang === "de" ? "https://www.oper-frankfurt.de/de/" : "https://www.oper-frankfurt.de/en/";
-  var head = "<thead><tr>" +
-    "<th scope=\"col\">" + M(COPY.season.colDate, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colWork, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colRole, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colVenue, lang) + "</th>" +
-    "<th scope=\"col\">" + M(COPY.season.colTickets, lang) + "</th>" +
-    "</tr></thead>";
+  var defaultVenue = M(COPY.season.venue, lang);
   var rows = SEASON.map(function (item) {
-    var flag = item.premiere ? "<span class=\"prod-flag\">" + M(COPY.season.flag, lang) + "</span>" : "";
-    return "<tr class=\"prod\">" +
-      "<td class=\"prod-dates\">" + M(item.dates, lang) + "</td>" +
-      "<td class=\"prod-work\"><em>" + item.work + "</em>" + flag + "</td>" +
-      "<td class=\"prod-role\">" + M(item.role, lang) + "</td>" +
-      "<td class=\"prod-venue\">" + venue + "</td>" +
-      "<td class=\"prod-tickets\"><a href=\"" + ticketHref + "\" target=\"_blank\" rel=\"noreferrer\">" + tickets + "</a></td>" +
-      "</tr>";
+    var flag = item.premiere ? "<span class=\"season-flag\">" + M(COPY.season.flag, lang) + "</span>" : "";
+    var sub = item.sub ? "<p class=\"season-row-sub\">" + M(item.sub, lang) + "</p>" : "";
+    var venue = item.venue ? M(item.venue, lang) : defaultVenue;
+    var href = ofHref(item.of, lang);
+    return "<article class=\"season-row\">" +
+      "<p class=\"season-row-dates\">" + M(item.dates, lang) + "</p>" +
+      "<div class=\"season-row-main\">" +
+        "<h3 class=\"season-row-work\"><em>" + item.work + "</em>" + flag + "</h3>" +
+        "<p class=\"season-row-role\">" + M(item.role, lang) + "</p>" +
+        sub +
+      "</div>" +
+      "<p class=\"season-row-venue\">" + venue + "</p>" +
+      "<a class=\"season-row-ticket\" data-of=\"" + item.of + "\" href=\"" + href + "\">" + tickets + " <span aria-hidden=\"true\">→</span></a>" +
+    "</article>";
   }).join("");
-  host.innerHTML = "<table class=\"season-table\">" + head + "<tbody>" + rows + "</tbody></table>";
+  host.innerHTML = "<div class=\"season-list\">" + rows + "</div>";
   decorateLinks(host, lang);
+  rewriteOperFrankfurtLinks(lang);
 }
 
 function rewriteOperFrankfurtLinks(lang) {
-  var want = lang === "de" ? "de" : "en";
-  document.querySelectorAll("a[href]").forEach(function (a) {
-    var href = a.getAttribute("href") || "";
-    if (href.indexOf("oper-frankfurt.de") === -1) return;
-    a.setAttribute("href", href.replace(/\/(?:en|de)\//, "/" + want + "/"));
+  document.querySelectorAll("[data-of]").forEach(function (a) {
+    var href = ofHref(a.getAttribute("data-of"), lang);
+    if (href) a.setAttribute("href", href);
   });
 }
 
-function syncLangGliders(lang) {
-  var rootFs = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-  var barW = 1.15 * rootFs;
-  document.querySelectorAll(".lang").forEach(function (group) {
-    var glider = group.querySelector(".lang-glider");
-    var btn = group.querySelector('button[aria-pressed="true"]') ||
-      group.querySelector('[data-lang="' + lang + '"]');
-    if (!glider || !btn) return;
-    var groupBox = group.getBoundingClientRect();
-    var labelBox;
-    var node = btn.firstChild;
-    if (node && node.nodeType === 3) {
-      var range = document.createRange();
-      range.selectNodeContents(node);
-      labelBox = range.getBoundingClientRect();
-    } else {
-      labelBox = btn.getBoundingClientRect();
+function filenameForPress(kind, lang) {
+  var base = {
+    short: {
+      en: "Karolina-Bengtsson-short-biography-EN.txt",
+      sv: "Karolina-Bengtsson-kort-biografi-SV.txt",
+      de: "Karolina-Bengtsson-Kurzbiographie-DE.txt",
+      fr: "Karolina-Bengtsson-biographie-courte-FR.txt"
+    },
+    long: {
+      en: "Karolina-Bengtsson-biography-EN.txt",
+      sv: "Karolina-Bengtsson-biografi-SV.txt",
+      de: "Karolina-Bengtsson-Biographie-DE.txt",
+      fr: "Karolina-Bengtsson-biographie-FR.txt"
     }
-    var center = labelBox.left + labelBox.width / 2 - groupBox.left;
-    glider.style.width = barW + "px";
-    glider.style.transform = "translateX(" + (center - barW / 2) + "px)";
+  };
+  return (base[kind] && base[kind][lang]) || ("Karolina-Bengtsson-" + kind + ".txt");
+}
+
+function downloadTextFile(filename, text) {
+  var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+}
+
+function renderPress(lang) {
+  var shortEl = document.getElementById("press-short");
+  var longEl = document.getElementById("press-long");
+  if (shortEl) shortEl.innerHTML = "<p>" + M(COPY.press.short, lang) + "</p>";
+  if (longEl) {
+    longEl.innerHTML = M(COPY.press.long, lang).split(/\n\n+/).map(function (p) {
+      return "<p>" + p + "</p>";
+    }).join("");
+  }
+  var host = document.getElementById("press-photos");
+  if (host) {
+    var dl = M(COPY.press.download, lang);
+    host.innerHTML = PRESS_PHOTOS.map(function (photo) {
+      return "<figure class=\"press-shot\">" +
+        "<img src=\"" + photo.thumb + "\" alt=\"" + M(lookup(photo.alt), lang) + "\" width=\"480\" height=\"320\" loading=\"lazy\" decoding=\"async\">" +
+        "<figcaption>" +
+          "<span>" + M(lookup(photo.credit), lang) + "</span>" +
+          "<a href=\"" + photo.file + "\" download=\"" + photo.name + "\">" + dl + "</a>" +
+        "</figcaption>" +
+      "</figure>";
+    }).join("");
+  }
+  var cv = document.getElementById("press-cv-link");
+  if (cv) cv.setAttribute("href", "press/cv.html?lang=" + lang);
+}
+
+function setupPressDownloads() {
+  document.querySelectorAll("[data-press-download]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var kind = btn.getAttribute("data-press-download");
+      var text = M(kind === "long" ? COPY.press.long : COPY.press.short, currentLang);
+      downloadTextFile(filenameForPress(kind, currentLang), text);
+    });
   });
 }
 
@@ -2154,8 +2348,9 @@ function prefersReducedMotion() {
 
 var langFadeTimer = 0;
 
-function applyLang(lang) {
-  var y = window.scrollY;
+function applyLang(lang, opts) {
+  var restoreScroll = opts && opts.restoreScroll;
+  var y = restoreScroll ? window.scrollY : 0;
   currentLang = lang;
   try { window.localStorage.setItem(STORE, lang); } catch (e) {}
   applyChrome(lang);
@@ -2163,14 +2358,15 @@ function applyLang(lang) {
   renderChronology(lang);
   renderRepertoire(lang);
   renderSeason(lang);
+  renderPress(lang);
   decorateLinks(document, lang);
   rewriteOperFrankfurtLinks(lang);
-  syncLangGliders(lang);
-  window.scrollTo(0, y);
+  if (restoreScroll) window.scrollTo(0, y);
 }
 
 function setLang(lang, opts) {
-  var animate = opts && opts.animate && lang !== currentLang;
+  var changing = lang !== currentLang;
+  var animate = opts && opts.animate && changing;
   var main = document.getElementById("main");
   if (langFadeTimer) {
     window.clearTimeout(langFadeTimer);
@@ -2180,7 +2376,7 @@ function setLang(lang, opts) {
     main.classList.add("is-lang-fading");
     langFadeTimer = window.setTimeout(function () {
       langFadeTimer = 0;
-      applyLang(lang);
+      applyLang(lang, { restoreScroll: true });
       requestAnimationFrame(function () {
         main.classList.remove("is-lang-fading");
       });
@@ -2188,7 +2384,7 @@ function setLang(lang, opts) {
     return;
   }
   if (main) main.classList.remove("is-lang-fading");
-  applyLang(lang);
+  applyLang(lang, { restoreScroll: changing });
 }
 
 function isMobileNav() {
@@ -2198,8 +2394,10 @@ function isMobileNav() {
 function setMenuOpen(open) {
   var btn = document.getElementById("menu-btn");
   var nav = document.getElementById("site-nav");
+  var header = document.querySelector(".site-header");
   if (!btn || !nav) return;
   nav.classList.toggle("is-open", open);
+  if (header) header.classList.toggle("is-menu-open", open);
   btn.setAttribute("aria-expanded", open ? "true" : "false");
   btn.textContent = M(open ? COPY.menuClose : COPY.menu, currentLang);
   syncMenuInert();
@@ -2234,16 +2432,6 @@ function setupMenu() {
     if (!isMobileNav()) setMenuOpen(false);
     else syncMenuInert();
   });
-}
-
-function setupCompact() {
-  var header = document.getElementById("top");
-  if (!header) return;
-  function onScroll() {
-    header.classList.toggle("is-compact", window.scrollY > 72);
-  }
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
 }
 
 function setupSectionWatch() {
@@ -2295,17 +2483,39 @@ function loadEmbed(btn) {
     iframe.setAttribute("allow", "accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
     iframe.setAttribute("allowfullscreen", "");
   }
-  var host = btn.parentNode;
   btn.setAttribute("data-loaded", "1");
-  if (host) {
-    host.classList.add("is-playing");
+  var slot = btn.getAttribute("data-target");
+  var host = (slot && document.getElementById(slot)) || btn.parentNode;
+  if (!host) return;
+  host.hidden = false;
+  host.classList.add("is-playing");
+  if (host === btn.parentNode) {
     host.replaceChild(iframe, btn);
+  } else {
+    host.innerHTML = "";
+    host.appendChild(iframe);
+    btn.setAttribute("hidden", "");
   }
 }
 
 function setupMedia() {
   document.querySelectorAll("[data-embed]").forEach(function (btn) {
     btn.addEventListener("click", function () { loadEmbed(btn); });
+  });
+}
+
+function setupToTop() {
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener("click", function (event) {
+      event.preventDefault();
+      var reduce = prefersReducedMotion();
+      if (reduce) window.scrollTo(0, 0);
+      else window.scrollTo({ top: 0, behavior: "smooth" });
+      var dest = document.getElementById("top");
+      if (dest && dest.focus) {
+        try { dest.focus({ preventScroll: true }); } catch (e) { dest.focus(); }
+      }
+    });
   });
 }
 
@@ -2336,17 +2546,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   setupMenu();
-  setupCompact();
   setupSectionWatch();
   setupMedia();
+  setupPressDownloads();
+  setupToTop();
   setupReveal();
   setLang(currentLang);
-  requestAnimationFrame(function () {
-    requestAnimationFrame(function () {
-      syncLangGliders(currentLang);
-    });
-  });
-  window.addEventListener("resize", function () {
-    syncLangGliders(currentLang);
-  });
 });
