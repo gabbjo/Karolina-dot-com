@@ -2134,38 +2134,15 @@ function rewriteOperFrankfurtLinks(lang) {
   });
 }
 
-function syncLangGliders(lang) {
-  var rootFs = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
-  var barW = 1.15 * rootFs;
-  document.querySelectorAll(".lang").forEach(function (group) {
-    var glider = group.querySelector(".lang-glider");
-    var btn = group.querySelector('button[aria-pressed="true"]') ||
-      group.querySelector('[data-lang="' + lang + '"]');
-    if (!glider || !btn) return;
-    var groupBox = group.getBoundingClientRect();
-    var labelBox;
-    var node = btn.firstChild;
-    if (node && node.nodeType === 3) {
-      var range = document.createRange();
-      range.selectNodeContents(node);
-      labelBox = range.getBoundingClientRect();
-    } else {
-      labelBox = btn.getBoundingClientRect();
-    }
-    var center = labelBox.left + labelBox.width / 2 - groupBox.left;
-    glider.style.width = barW + "px";
-    glider.style.transform = "translateX(" + (center - barW / 2) + "px)";
-  });
-}
-
 function prefersReducedMotion() {
   return window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
 var langFadeTimer = 0;
 
-function applyLang(lang) {
-  var y = window.scrollY;
+function applyLang(lang, opts) {
+  var restoreScroll = opts && opts.restoreScroll;
+  var y = restoreScroll ? window.scrollY : 0;
   currentLang = lang;
   try { window.localStorage.setItem(STORE, lang); } catch (e) {}
   applyChrome(lang);
@@ -2175,12 +2152,12 @@ function applyLang(lang) {
   renderSeason(lang);
   decorateLinks(document, lang);
   rewriteOperFrankfurtLinks(lang);
-  syncLangGliders(lang);
-  window.scrollTo(0, y);
+  if (restoreScroll) window.scrollTo(0, y);
 }
 
 function setLang(lang, opts) {
-  var animate = opts && opts.animate && lang !== currentLang;
+  var changing = lang !== currentLang;
+  var animate = opts && opts.animate && changing;
   var main = document.getElementById("main");
   if (langFadeTimer) {
     window.clearTimeout(langFadeTimer);
@@ -2190,7 +2167,7 @@ function setLang(lang, opts) {
     main.classList.add("is-lang-fading");
     langFadeTimer = window.setTimeout(function () {
       langFadeTimer = 0;
-      applyLang(lang);
+      applyLang(lang, { restoreScroll: true });
       requestAnimationFrame(function () {
         main.classList.remove("is-lang-fading");
       });
@@ -2198,7 +2175,7 @@ function setLang(lang, opts) {
     return;
   }
   if (main) main.classList.remove("is-lang-fading");
-  applyLang(lang);
+  applyLang(lang, { restoreScroll: changing });
 }
 
 function isMobileNav() {
@@ -2353,12 +2330,4 @@ document.addEventListener("DOMContentLoaded", function () {
   setupMedia();
   setupReveal();
   setLang(currentLang);
-  requestAnimationFrame(function () {
-    requestAnimationFrame(function () {
-      syncLangGliders(currentLang);
-    });
-  });
-  window.addEventListener("resize", function () {
-    syncLangGliders(currentLang);
-  });
 });

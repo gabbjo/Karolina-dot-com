@@ -22,10 +22,11 @@
   <meta name="twitter:description" content="Karolina Bengtsson, svensk sopran. Medlem av Oper Frankfurts solistensemble, Birgit Nilsson-stipendiat 2025.">
   <meta name="twitter:image" content="https://karolinabengtsson.com/img/lakeside.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-sans-3-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/webp" href="img/lakeside-768.webp" imagesrcset="img/lakeside-480.webp 480w, img/lakeside-768.webp 768w, img/lakeside.webp 1024w" imagesizes="100vw">
   <link rel="stylesheet" href="css/site.css">
+  <script src="js/site.min.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main" data-i18n="skip">Hoppa till innehållet</a>
@@ -39,7 +40,6 @@
 
       <div class="header-tools">
         <div class="lang" role="group" aria-label="Språk">
-          <span class="lang-glider" aria-hidden="true"></span>
           <button type="button" lang="sv" data-lang="sv" aria-label="Svenska" aria-pressed="true">SV</button>
           <button type="button" lang="en" data-lang="en" aria-label="English" aria-pressed="false">EN</button>
           <button type="button" lang="de" data-lang="de" aria-label="Deutsch" aria-pressed="false">DE</button>
@@ -63,8 +63,8 @@
     <section class="hero" aria-labelledby="hero-brand">
       <div class="hero-media" aria-hidden="true">
         <picture>
-          <source type="image/webp" srcset="img/lakeside.webp 1024w" sizes="100vw">
-          <img src="img/lakeside.jpg" width="1024" height="683" alt="" loading="eager" fetchpriority="high" decoding="async">
+          <source type="image/webp" srcset="img/lakeside-480.webp 480w, img/lakeside-768.webp 768w, img/lakeside.webp 1024w" sizes="100vw">
+          <img src="img/lakeside.jpg" srcset="img/lakeside-480.jpg 480w, img/lakeside-768.jpg 768w, img/lakeside.jpg 1024w" sizes="100vw" width="1024" height="683" alt="" loading="eager" fetchpriority="high" decoding="async">
         </picture>
       </div>
       <div class="hero-shade" aria-hidden="true"></div>
@@ -100,8 +100,8 @@
         </div>
         <figure class="feature-photo reveal">
           <picture>
-            <source type="image/webp" srcset="img/hero.webp 927w" sizes="(max-width: 800px) 92vw, 45vw">
-            <img src="img/hero.jpg" width="927" height="1159" alt="Karolina Bengtsson, sopran" data-i18n-alt="opening.portraitAlt" loading="lazy" decoding="async">
+            <source type="image/webp" srcset="img/hero-480.webp 480w, img/hero-768.webp 768w, img/hero.webp 927w" sizes="(max-width: 800px) 92vw, 45vw">
+            <img src="img/hero.jpg" srcset="img/hero-480.jpg 480w, img/hero-768.jpg 768w, img/hero.jpg 927w" sizes="(max-width: 800px) 92vw, 45vw" width="927" height="1159" alt="Karolina Bengtsson, sopran" data-i18n-alt="opening.portraitAlt" loading="lazy" decoding="async">
           </picture>
           <figcaption class="meta" data-i18n="credit.portrait">Foto: Tore Sjöqvist</figcaption>
         </figure>
@@ -136,8 +136,8 @@
           </div>
           <figure class="bio-photo reveal">
             <picture>
-              <source type="image/webp" srcset="img/forest-front.webp 1178w" sizes="(max-width: 860px) 92vw, 38vw">
-              <img src="img/forest-front.jpg" width="1178" height="781" alt="Karolina Bengtsson i bokskog" data-i18n-alt="gallery.alt1" loading="lazy" decoding="async">
+              <source type="image/webp" srcset="img/forest-front-480.webp 480w, img/forest-front-768.webp 768w, img/forest-front.webp 1178w" sizes="(max-width: 860px) 92vw, 38vw">
+              <img src="img/forest-front.jpg" srcset="img/forest-front-480.jpg 480w, img/forest-front-768.jpg 768w, img/forest-front.jpg 1178w" sizes="(max-width: 860px) 92vw, 38vw" width="1178" height="781" alt="Karolina Bengtsson i bokskog" data-i18n-alt="gallery.alt1" loading="lazy" decoding="async">
             </picture>
             <figcaption class="meta" data-i18n="credit.smaland">Foto: Tore Sjöqvist</figcaption>
           </figure>
@@ -181,7 +181,7 @@
             <p class="body" data-i18n="media.albumBody">Inspelad vid Innsbrucker Festwochen der Alten Musik 2025 med Les Talens Lyriques under Christophe Rousset. Karolina sjunger Dori tillsammans med Rocío Pérez och Rafał Tomkiewicz. I augusti 2026 upptogs inspelningen på Preis der deutschen Schallplattenkritiks Bestenliste.</p>
           </div>
           <div class="media-slot" data-ratio="album">
-            <button type="button" class="media-poster" data-embed="spotify" data-src="https://open.spotify.com/embed/album/5rzAMl6n2ywCcNQu5QBjhY" data-title="Spotify: Traetta, Ifigenia in Tauride (Aparté)" data-i18n-aria="media.loadAlbum" style="--poster: url('img/forest-look.jpg')">
+            <button type="button" class="media-poster" data-embed="spotify" data-src="https://open.spotify.com/embed/album/5rzAMl6n2ywCcNQu5QBjhY" data-title="Spotify: Traetta, Ifigenia in Tauride (Aparté)" data-i18n-aria="media.loadAlbum" style="--poster: url('img/forest-look-768.webp')">
               <span class="play-mark" aria-hidden="true"></span>
               <span class="poster-work"><em>Ifigenia in Tauride</em></span>
               <span class="poster-meta"><span>Traetta</span><span>Aparté</span></span>
@@ -193,7 +193,7 @@
           <div class="film-grid">
             <figure>
               <div class="media-slot" data-ratio="film">
-                <button type="button" class="media-poster" data-embed="youtube" data-src="https://www.youtube-nocookie.com/embed/NmS4oUnsts4" data-title="Death and Juliet, Daniel Nelson - Karolina Bengtsson, Malin Broman, Musica Vitae" data-i18n-aria="media.load1" style="--poster: url('img/stonewall.jpg')">
+                <button type="button" class="media-poster" data-embed="youtube" data-src="https://www.youtube-nocookie.com/embed/NmS4oUnsts4" data-title="Death and Juliet, Daniel Nelson - Karolina Bengtsson, Malin Broman, Musica Vitae" data-i18n-aria="media.load1" style="--poster: url('img/stonewall-768.webp')">
                   <span class="play-mark" aria-hidden="true"></span>
                   <span class="poster-work"><em>Death and Juliet</em></span>
                   <span class="poster-meta"><span>Daniel Nelson</span><span>Musica Vitae</span></span>
@@ -203,7 +203,7 @@
             </figure>
             <figure>
               <div class="media-slot" data-ratio="film">
-                <button type="button" class="media-poster" data-embed="youtube" data-src="https://www.youtube-nocookie.com/embed/KSe2OZpDYwQ" data-title="Ascanio in Alba trailer, Oper Frankfurt - Karolina Bengtsson as Silvia" data-i18n-aria="media.load2" style="--poster: url('img/anna.jpg')">
+                <button type="button" class="media-poster" data-embed="youtube" data-src="https://www.youtube-nocookie.com/embed/KSe2OZpDYwQ" data-title="Ascanio in Alba trailer, Oper Frankfurt - Karolina Bengtsson as Silvia" data-i18n-aria="media.load2" style="--poster: url('img/anna-768.webp')">
                   <span class="play-mark" aria-hidden="true"></span>
                   <span class="poster-work"><em>Ascanio in Alba</em></span>
                   <span class="poster-meta"><span>Mozart</span><span>Oper Frankfurt</span></span>
@@ -269,34 +269,34 @@
         <div class="gallery-main">
           <figure class="shot shot-anna reveal">
             <picture>
-              <source type="image/webp" srcset="img/anna.webp 1179w" sizes="(max-width: 800px) 92vw, 58vw">
-              <img class="anna" src="img/anna.jpg" width="1179" height="779" alt="Karolina Bengtsson som Anna i Blühen, Oper Frankfurt" data-i18n-alt="gallery.annaAlt" loading="lazy" decoding="async">
+              <source type="image/webp" srcset="img/anna-480.webp 480w, img/anna-768.webp 768w, img/anna.webp 1179w" sizes="(max-width: 800px) 92vw, 58vw">
+              <img class="anna" src="img/anna.jpg" srcset="img/anna-480.jpg 480w, img/anna-768.jpg 768w, img/anna.jpg 1179w" sizes="(max-width: 800px) 92vw, 58vw" width="1179" height="779" alt="Karolina Bengtsson som Anna i Blühen, Oper Frankfurt" data-i18n-alt="gallery.annaAlt" loading="lazy" decoding="async">
             </picture>
             <figcaption class="meta" data-i18n="credit.anna">Anna i Blühen, Oper Frankfurt. Foto: Barbara Aumüller</figcaption>
           </figure>
           <figure class="shot shot-belisa reveal">
             <picture>
-              <source type="image/webp" srcset="img/belisa.webp 1179w" sizes="(max-width: 800px) 92vw, 42vw">
-              <img class="belisa" src="img/belisa.jpg" width="1179" height="834" alt="Karolina Bengtsson som Belisa, Oper Frankfurt" data-i18n-alt="gallery.belisaAlt" loading="lazy" decoding="async">
+              <source type="image/webp" srcset="img/belisa-480.webp 480w, img/belisa-768.webp 768w, img/belisa.webp 1179w" sizes="(max-width: 800px) 92vw, 42vw">
+              <img class="belisa" src="img/belisa.jpg" srcset="img/belisa-480.jpg 480w, img/belisa-768.jpg 768w, img/belisa.jpg 1179w" sizes="(max-width: 800px) 92vw, 42vw" width="1179" height="834" alt="Karolina Bengtsson som Belisa, Oper Frankfurt" data-i18n-alt="gallery.belisaAlt" loading="lazy" decoding="async">
             </picture>
             <figcaption class="meta" data-i18n="credit.belisa">Belisa i In seinem Garten liebt Don Perlimplín Belisa, Oper Frankfurt. Foto: Barbara Aumüller</figcaption>
           </figure>
           <figure class="shot shot-forest reveal">
             <picture>
-              <source type="image/webp" srcset="img/gate.webp 1400w" sizes="(max-width: 800px) 92vw, 42vw">
-              <img src="img/gate.jpg" width="1400" height="933" alt="Karolina Bengtsson vid en grind" data-i18n-alt="gallery.alt2" loading="lazy" decoding="async">
+              <source type="image/webp" srcset="img/gate-480.webp 480w, img/gate-768.webp 768w, img/gate.webp 1400w" sizes="(max-width: 800px) 92vw, 42vw">
+              <img src="img/gate.jpg" srcset="img/gate-480.jpg 480w, img/gate-768.jpg 768w, img/gate.jpg 1400w" sizes="(max-width: 800px) 92vw, 42vw" width="1400" height="933" alt="Karolina Bengtsson vid en grind" data-i18n-alt="gallery.alt2" loading="lazy" decoding="async">
             </picture>
           </figure>
           <figure class="shot shot-stone reveal">
             <picture>
-              <source type="image/webp" srcset="img/stonewall.webp 1024w" sizes="(max-width: 800px) 92vw, 33vw">
-              <img class="face-mid" src="img/stonewall.jpg" width="1024" height="683" alt="Karolina Bengtsson vid en stenmur" data-i18n-alt="gallery.alt3" loading="lazy" decoding="async">
+              <source type="image/webp" srcset="img/stonewall-480.webp 480w, img/stonewall-768.webp 768w, img/stonewall.webp 1024w" sizes="(max-width: 800px) 92vw, 33vw">
+              <img class="face-mid" src="img/stonewall.jpg" srcset="img/stonewall-480.jpg 480w, img/stonewall-768.jpg 768w, img/stonewall.jpg 1024w" sizes="(max-width: 800px) 92vw, 33vw" width="1024" height="683" alt="Karolina Bengtsson vid en stenmur" data-i18n-alt="gallery.alt3" loading="lazy" decoding="async">
             </picture>
           </figure>
           <figure class="shot shot-look reveal">
             <picture>
-              <source type="image/webp" srcset="img/forest-look.webp 1178w" sizes="(max-width: 800px) 92vw, 67vw">
-              <img src="img/forest-look.jpg" width="1178" height="767" alt="Karolina Bengtsson vid ett mossigt träd" data-i18n-alt="gallery.alt4" loading="lazy" decoding="async">
+              <source type="image/webp" srcset="img/forest-look-480.webp 480w, img/forest-look-768.webp 768w, img/forest-look.webp 1178w" sizes="(max-width: 800px) 92vw, 67vw">
+              <img src="img/forest-look.jpg" srcset="img/forest-look-480.jpg 480w, img/forest-look-768.jpg 768w, img/forest-look.jpg 1178w" sizes="(max-width: 800px) 92vw, 67vw" width="1178" height="767" alt="Karolina Bengtsson vid ett mossigt träd" data-i18n-alt="gallery.alt4" loading="lazy" decoding="async">
             </picture>
           </figure>
         </div>
@@ -307,22 +307,22 @@
           <div class="gallery-more">
             <figure class="shot">
               <picture>
-                <source type="image/webp" srcset="img/cosi-brief.webp 631w" sizes="(max-width: 800px) 92vw, 50vw">
-                <img src="img/cosi-brief.jpg" width="631" height="631" alt="Karolina Bengtsson som Fiordiligi" data-i18n-alt="gallery.briefAlt" loading="lazy" decoding="async">
+                <source type="image/webp" srcset="img/cosi-brief-480.webp 480w, img/cosi-brief.webp 631w" sizes="(max-width: 800px) 92vw, 50vw">
+                <img src="img/cosi-brief.jpg" srcset="img/cosi-brief-480.jpg 480w, img/cosi-brief.jpg 631w" sizes="(max-width: 800px) 92vw, 50vw" width="631" height="631" alt="Karolina Bengtsson som Fiordiligi" data-i18n-alt="gallery.briefAlt" loading="lazy" decoding="async">
               </picture>
               <figcaption class="meta" data-i18n="credit.stage">Così fan tutte, Oper Frankfurt. Foto: Barbara Aumüller</figcaption>
             </figure>
             <figure class="shot">
               <picture>
-                <source type="image/webp" srcset="img/hero.webp 927w" sizes="(max-width: 800px) 92vw, 50vw">
-                <img src="img/hero.jpg" width="927" height="1159" alt="Karolina Bengtsson, sopran" data-i18n-alt="opening.portraitAlt" loading="lazy" decoding="async">
+                <source type="image/webp" srcset="img/hero-480.webp 480w, img/hero-768.webp 768w, img/hero.webp 927w" sizes="(max-width: 800px) 92vw, 50vw">
+                <img src="img/hero.jpg" srcset="img/hero-480.jpg 480w, img/hero-768.jpg 768w, img/hero.jpg 927w" sizes="(max-width: 800px) 92vw, 50vw" width="927" height="1159" alt="Karolina Bengtsson, sopran" data-i18n-alt="opening.portraitAlt" loading="lazy" decoding="async">
               </picture>
               <figcaption class="meta" data-i18n="credit.portrait">Foto: Tore Sjöqvist</figcaption>
             </figure>
             <figure class="shot">
               <picture>
-                <source type="image/webp" srcset="img/lakeside.webp 1024w" sizes="(max-width: 800px) 92vw, 50vw">
-                <img src="img/lakeside.jpg" width="1024" height="683" alt="Karolina Bengtsson vid en sjö" data-i18n-alt="bio.alt" loading="lazy" decoding="async">
+                <source type="image/webp" srcset="img/lakeside-480.webp 480w, img/lakeside-768.webp 768w, img/lakeside.webp 1024w" sizes="(max-width: 800px) 92vw, 50vw">
+                <img src="img/lakeside.jpg" srcset="img/lakeside-480.jpg 480w, img/lakeside-768.jpg 768w, img/lakeside.jpg 1024w" sizes="(max-width: 800px) 92vw, 50vw" width="1024" height="683" alt="Karolina Bengtsson vid en sjö" data-i18n-alt="bio.alt" loading="lazy" decoding="async">
               </picture>
               <figcaption class="meta" data-i18n="credit.portrait">Foto: Tore Sjöqvist</figcaption>
             </figure>
@@ -375,6 +375,5 @@
     </div>
   </footer>
 
-  <script src="js/site.js"></script>
 </body>
 </html>

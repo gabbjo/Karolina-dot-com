@@ -18,4 +18,4 @@ Live: https://karolinabengtsson.com
 
 ## Publicera
 
-Ladda upp innehållet i den här mappen till webbhotellet så att `index.html` ligger i webbrotten. Apache läser `.htaccess`.
+Ladda upp innehållet i den här mappen till webbhotellet så att `index.html` ligger i webbrotten. Apache läser `.htaccess` (säkerhets- och cache-headers). Typsnitten ligger i `fonts/` och laddas lokalt, inte från Google Fonts.
