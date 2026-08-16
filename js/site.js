@@ -2514,6 +2514,21 @@ function setupMedia() {
   });
 }
 
+function setupToTop() {
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener("click", function (event) {
+      event.preventDefault();
+      var reduce = prefersReducedMotion();
+      if (reduce) window.scrollTo(0, 0);
+      else window.scrollTo({ top: 0, behavior: "smooth" });
+      var dest = document.getElementById("top");
+      if (dest && dest.focus) {
+        try { dest.focus({ preventScroll: true }); } catch (e) { dest.focus(); }
+      }
+    });
+  });
+}
+
 function setupReveal() {
   var nodes = document.querySelectorAll(".reveal");
   if (!nodes.length) return;
@@ -2545,6 +2560,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setupSectionWatch();
   setupMedia();
   setupPressDownloads();
+  setupToTop();
   setupReveal();
   setLang(currentLang);
 });

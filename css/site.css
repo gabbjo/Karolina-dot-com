@@ -89,7 +89,7 @@
   --display: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
   --sans: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
   --page: 72rem;
-  --gutter: clamp(1.2rem, 3.8vw, 2.6rem);
+  --gutter: clamp(1.85rem, 5.5vw, 3.5rem);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -102,6 +102,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 4.5rem;
+  padding-left: env(safe-area-inset-left, 0);
+  padding-right: env(safe-area-inset-right, 0);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -196,6 +198,15 @@ a:hover {
   transform: none;
 }
 
+.top-anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .wrap {
   width: min(100% - 2 * var(--gutter), var(--page));
   margin-inline: auto;
@@ -260,8 +271,8 @@ a:hover {
     "brand tools"
     "nav nav";
   align-items: center;
-  column-gap: 1rem;
-  padding: 1rem 0 0.65rem;
+  column-gap: 1.15rem;
+  padding: 1.15rem 0 0.85rem;
 }
 
 .site-header.is-compact .header-inner {
@@ -520,10 +531,7 @@ a:hover {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding: 7.5rem 0 5.5rem;
-  max-width: 40rem;
-  margin-inline: 0 auto 0 max(var(--gutter), calc((100% - var(--page)) / 2));
-  width: min(100% - 2 * var(--gutter), 40rem);
+  padding: 8rem 0 5.75rem;
 }
 
 .hero-kicker {
@@ -551,9 +559,9 @@ a:hover {
   font-family: var(--display);
   font-optical-sizing: auto;
   font-weight: 600;
-  font-size: clamp(3.4rem, 11vw, 7.2rem);
-  line-height: 0.88;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.85rem, 9.5vw, 6.6rem);
+  line-height: 0.92;
+  letter-spacing: -0.025em;
 }
 
 .hero-brand span {
@@ -654,7 +662,7 @@ a:hover {
 
 @media (max-width: 700px) {
   .hero-content {
-    padding: 6.5rem 0 4.25rem;
+    padding: 7.25rem 0 4.75rem;
   }
 
   .hero-media img {
@@ -1721,6 +1729,9 @@ button.text-link:hover {
   color: var(--ink);
   text-decoration: none;
   font-weight: 600;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .footer-bar a:hover {
