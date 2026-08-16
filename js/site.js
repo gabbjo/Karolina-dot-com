@@ -2394,7 +2394,7 @@ function isMobileNav() {
 function setMenuOpen(open) {
   var btn = document.getElementById("menu-btn");
   var nav = document.getElementById("site-nav");
-  var header = document.getElementById("top");
+  var header = document.querySelector(".site-header");
   if (!btn || !nav) return;
   nav.classList.toggle("is-open", open);
   if (header) header.classList.toggle("is-menu-open", open);
@@ -2435,10 +2435,19 @@ function setupMenu() {
 }
 
 function setupCompact() {
-  var header = document.getElementById("top");
+  var header = document.querySelector(".site-header");
+  var probe = document.getElementById("top");
   if (!header) return;
+  if ("IntersectionObserver" in window && probe) {
+    var io = new IntersectionObserver(function (entries) {
+      var entry = entries[0];
+      header.classList.toggle("is-compact", !!(entry && !entry.isIntersecting));
+    }, { threshold: 0, rootMargin: "-72px 0px 0px 0px" });
+    io.observe(probe);
+    return;
+  }
   function onScroll() {
-    header.classList.toggle("is-compact", window.scrollY > 72);
+    header.classList.toggle("is-compact", window.pageYOffset > 72);
   }
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
