@@ -585,7 +585,11 @@ a:hover {
   }
 
   .hero-media img {
-    object-position: 22% 35%;
+    object-position: 38% 36%;
+  }
+
+  .hero-shade {
+    background: linear-gradient(180deg, rgba(10, 8, 6, 0.2) 0%, transparent 34%, rgba(10, 8, 6, 0.1) 64%, rgba(10, 8, 6, 0.58) 100%);
   }
 
   .hero-credit {
