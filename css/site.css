@@ -1,21 +1,21 @@
 /* Karolina Bengtsson — Officiell webbplats */
 
 :root {
-  --bg: #faf8f5;
-  --bg-card: #ffffff;
-  --bg-subtle: #f2ede4;
-  --ink: #181512;
-  --muted: #6b635b;
-  --muted-light: #948c82;
-  --accent: #9e2a2b;
-  --accent-hover: #7d1f20;
-  --gold: #b38b4d;
-  --stage: #141210;
-  --border: rgba(24, 21, 18, 0.08);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
-  --display: "Cormorant", "Iowan Old Style", Palatino, Georgia, serif;
-  --sans: "Figtree", "Segoe UI", Helvetica, Arial, sans-serif;
+  --bg: #f4ead8;
+  --bg-card: #fff8ee;
+  --bg-subtle: #ead9c0;
+  --ink: #2b1c12;
+  --muted: #6e4f38;
+  --muted-light: #8a6a4e;
+  --accent: #9c2d2a;
+  --accent-hover: #7a211f;
+  --gold: #c49a4a;
+  --stage: #1c1410;
+  --border: rgba(80, 48, 24, 0.14);
+  --shadow-sm: 0 1px 3px rgba(80, 40, 16, 0.06), 0 1px 2px rgba(80, 40, 16, 0.04);
+  --shadow-md: 0 6px 18px rgba(80, 40, 16, 0.08), 0 2px 6px rgba(80, 40, 16, 0.04);
+  --display: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+  --sans: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif;
   --page: 72rem;
   --gutter: clamp(1.2rem, 3.8vw, 2.6rem);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -169,7 +169,7 @@ a:hover {
 
 .site-header.is-compact {
   color: var(--ink);
-  background: rgba(250, 248, 245, 0.95);
+  background: rgba(244, 234, 216, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 var(--border);
@@ -376,7 +376,7 @@ a:hover {
   .site-header:has(.nav.is-open),
   .site-header.is-menu-open {
     color: var(--ink);
-    background: rgba(250, 248, 245, 0.98);
+    background: rgba(244, 234, 216, 0.98);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 1px 0 var(--border);
@@ -470,10 +470,11 @@ a:hover {
 .hero-brand {
   margin: 0;
   font-family: var(--display);
+  font-optical-sizing: auto;
   font-weight: 600;
   font-size: clamp(3.4rem, 11vw, 7.2rem);
   line-height: 0.88;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
 .hero-brand span {
@@ -690,6 +691,7 @@ a:hover {
 .section-head h2 {
   margin: 0;
   font-family: var(--display);
+  font-optical-sizing: auto;
   font-size: clamp(2.2rem, 4.5vw, 3.1rem);
   font-weight: 600;
   letter-spacing: -0.02em;

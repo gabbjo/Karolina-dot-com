@@ -116,10 +116,10 @@ const COPY = {
   "opening": {
     "house": "Oper Frankfurt",
     "from": {
-      "en": "Soprano · Oper Frankfurt",
-      "sv": "Sopran · Oper Frankfurt",
-      "de": "Sopran · Oper Frankfurt",
-      "fr": "Soprano · Oper Frankfurt"
+      "en": "Soprano – Oper Frankfurt",
+      "sv": "Sopran – Oper Frankfurt",
+      "de": "Sopran – Oper Frankfurt",
+      "fr": "Soprano – Oper Frankfurt"
     },
     "lineShort": {
       "en": "Swedish soprano. Birgit Nilsson Stipendiat 2025.",
