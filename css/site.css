@@ -784,8 +784,14 @@ a:hover {
 
 .season-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .season-cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 .season-card {
@@ -845,8 +851,14 @@ a:hover {
 }
 
 .season-card-role {
-  margin: 0.4rem 0 1.25rem;
+  margin: 0.4rem 0 0;
   font-size: 0.98rem;
+  color: var(--ink);
+}
+
+.season-card-sub {
+  margin: 0.25rem 0 1.15rem;
+  font-size: 0.85rem;
   color: var(--muted);
 }
 
@@ -870,6 +882,7 @@ a:hover {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
+  min-height: 44px;
   gap: 0.25rem;
 }
 
@@ -951,7 +964,7 @@ a:hover {
   position: relative;
   padding: clamp(4rem, 9vw, 7rem) 0;
   background:
-    linear-gradient(160deg, rgba(20, 18, 16, 0.75), rgba(20, 18, 16, 0.9)),
+    linear-gradient(160deg, rgba(20, 18, 16, 0.82), rgba(20, 18, 16, 0.94)),
     url("../img/forest-look.jpg") center / cover no-repeat;
   color: #ffffff;
 }
@@ -1090,8 +1103,10 @@ a:hover {
   text-align: left;
   color: #ffffff;
   background:
-    radial-gradient(circle at 70% 30%, rgba(158, 42, 43, 0.35), transparent 55%),
-    linear-gradient(160deg, #24201c, #141210 70%);
+    linear-gradient(180deg, rgba(20, 18, 16, 0.2) 20%, rgba(20, 18, 16, 0.78) 100%),
+    var(--poster, linear-gradient(160deg, #24201c, #141210 70%));
+  background-size: cover;
+  background-position: center;
 }
 
 .media-poster:hover {
@@ -1412,16 +1427,19 @@ a:hover {
 
 .shot {
   margin: 0;
+}
+
+.shot picture {
+  display: block;
   overflow: hidden;
-  background: var(--bg-subtle);
   border-radius: 6px;
+  background: var(--bg-subtle);
   box-shadow: var(--shadow-sm);
 }
 
 .shot picture,
 .shot img {
   width: 100%;
-  height: 100%;
   display: block;
 }
 
@@ -1519,8 +1537,6 @@ a:hover {
 .gallery-more img {
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 6px;
-  box-shadow: var(--shadow-sm);
 }
 
 @media (max-width: 800px) {

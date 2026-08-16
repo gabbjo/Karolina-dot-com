@@ -116,10 +116,10 @@ const COPY = {
   "opening": {
     "house": "Oper Frankfurt",
     "from": {
-      "en": "Oper Frankfurt",
-      "sv": "Oper Frankfurt",
-      "de": "Oper Frankfurt",
-      "fr": "Oper Frankfurt"
+      "en": "Soprano · Oper Frankfurt",
+      "sv": "Sopran · Oper Frankfurt",
+      "de": "Sopran · Oper Frankfurt",
+      "fr": "Soprano · Oper Frankfurt"
     },
     "lineShort": {
       "en": "Swedish soprano. Birgit Nilsson Stipendiat 2025.",
@@ -140,16 +140,16 @@ const COPY = {
       "fr": "Billets"
     },
     "lead1": {
-      "en": "She swears eternal fidelity again.",
-      "sv": "Hon svär evig trohet igen.",
-      "de": "Sie schwört wieder ewige Treue.",
-      "fr": "Elle jure encore fidélité éternelle."
+      "en": "This season",
+      "sv": "Denna säsong",
+      "de": "In dieser Spielzeit",
+      "fr": "Cette saison"
     },
     "lead2": {
-      "en": "Night after night.",
-      "sv": "Kväll efter kväll.",
-      "de": "Abend für Abend.",
-      "fr": "Soir après soir."
+      "en": "at Oper Frankfurt",
+      "sv": "på Oper Frankfurt",
+      "de": "an der Oper Frankfurt",
+      "fr": "à l'Oper Frankfurt"
     },
     "line": {
       "en": "in <em>Così fan tutte</em> at Oper Frankfurt, 23 Aug – 21 Jan",
@@ -381,10 +381,10 @@ const COPY = {
   },
   "season": {
     "title": {
-      "en": "Season",
-      "sv": "Säsong",
-      "de": "Spielzeit",
-      "fr": "Saison"
+      "en": "Season 2026/27",
+      "sv": "Säsong 2026/27",
+      "de": "Spielzeit 2026/27",
+      "fr": "Saison 2026/27"
     },
     "note": {
       "en": "Spielzeit 2026/27",
@@ -2105,6 +2105,7 @@ function renderSeason(lang) {
   var ticketHref = lang === "de" ? "https://www.oper-frankfurt.de/de/" : "https://www.oper-frankfurt.de/en/";
   var cards = SEASON.map(function (item) {
     var flag = item.premiere ? "<span class=\"season-card-flag\">" + M(COPY.season.flag, lang) + "</span>" : "";
+    var sub = item.sub ? "<p class=\"season-card-sub\">" + M(item.sub, lang) + "</p>" : "";
     return "<article class=\"season-card\">" +
       "<div class=\"season-card-head\">" +
         "<span class=\"season-card-dates\">" + M(item.dates, lang) + "</span>" +
@@ -2112,6 +2113,7 @@ function renderSeason(lang) {
       "</div>" +
       "<h3 class=\"season-card-work\"><em>" + item.work + "</em></h3>" +
       "<p class=\"season-card-role\">" + M(item.role, lang) + "</p>" +
+      sub +
       "<div class=\"season-card-foot\">" +
         "<span class=\"season-card-venue\">" + venue + "</span>" +
         "<a class=\"season-card-ticket\" href=\"" + ticketHref + "\" target=\"_blank\" rel=\"noreferrer\">" + tickets + " <span aria-hidden=\"true\">→</span></a>" +
