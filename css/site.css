@@ -459,12 +459,24 @@ a:hover {
 }
 
 .hero-kicker {
-  margin: 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin: 0 0 1.15rem;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   opacity: 0.85;
+}
+
+.hero-kicker::before {
+  content: "";
+  width: 2.25rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
 }
 
 .hero-brand {
@@ -1146,6 +1158,9 @@ a:hover {
 }
 
 .poster-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
