@@ -201,6 +201,12 @@ const COPY = {
       "sv": "Det senaste om Karolina Bengtsson",
       "de": "Das Neueste über Karolina Bengtsson",
       "fr": "Les dernières nouvelles de Karolina Bengtsson"
+    },
+    "more": {
+      "en": "Earlier news",
+      "sv": "Tidigare nyheter",
+      "de": "Frühere Meldungen",
+      "fr": "Actualités précédentes"
     }
   },
   "bio": {
@@ -217,7 +223,7 @@ const COPY = {
       "fr": "Biographie & parcours"
     },
     "p1": {
-      "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, Småland. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s with Barbara Bonney at the Mozarteum in Salzburg in 2023. Wolfgang Holzmair taught her lied.",
+      "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, Småland. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s with Barbara Bonney at the Mozarteum in Salzburg in 2023. She studied Lied with Wolfgang Holzmair.",
       "sv": "Karolina Bengtsson föddes 1997 och växte upp i Huseby, en bruksort i Småland. Hon studerade vid Det Kongelige Danske Musikkonservatorium i Köpenhamn och tog master för Barbara Bonney vid Mozarteum i Salzburg 2023. I romans arbetade hon med Wolfgang Holzmair.",
       "de": "Karolina Bengtsson, geboren 1997, wuchs in Huseby in Småland auf. Sie studierte an der Königlich Dänischen Musikakademie in Kopenhagen und machte 2023 ihren Master bei Barbara Bonney am Mozarteum in Salzburg. Lied bei Wolfgang Holzmair.",
       "fr": "Karolina Bengtsson est née en 1997 et a grandi à Huseby, dans le Småland. Elle a étudié à l'Académie royale danoise de musique à Copenhague et a passé son master en 2023 avec Barbara Bonney au Mozarteum de Salzbourg. Le lied, elle l'a travaillé avec Wolfgang Holzmair."
@@ -627,10 +633,10 @@ const COPY = {
       "fr": "Karolina Bengtsson en Fiordiligi dans Così fan tutte, Oper Frankfurt"
     },
     "viewFull": {
-      "en": "Portraits",
-      "sv": "Porträtt",
-      "de": "Porträts",
-      "fr": "Portraits"
+      "en": "More photographs",
+      "sv": "Fler fotografier",
+      "de": "Weitere Fotografien",
+      "fr": "Autres photographies"
     }
   },
   "contact": {
@@ -744,6 +750,12 @@ const COPY = {
       "de": "Lebenslauf öffnen",
       "fr": "Ouvrir le CV"
     },
+    "downloadCv": {
+      "en": "Download CV (PDF)",
+      "sv": "Ladda ner CV (PDF)",
+      "de": "Lebenslauf als PDF",
+      "fr": "Télécharger le CV (PDF)"
+    },
     "short": {
       "en": "Karolina Bengtsson is a soprano in the ensemble at Oper Frankfurt. She received the Birgit Nilsson Stipendium in 2025. In Frankfurt in 2026/27 she sings Fiordiligi in Così fan tutte, the title role in Zaide, Gretel in Hänsel und Gretel and Oberto in Alcina. First record: Traetta, Ifigenia in Tauride, Les Talens Lyriques, Christophe Rousset (Aparté, 2026). Bestenliste, Preis der deutschen Schallplattenkritik.",
       "sv": "Karolina Bengtsson är sopran i ensemblen vid Oper Frankfurt. Hon fick Birgit Nilsson-stipendiet 2025. I Frankfurt 2026/27 sjunger hon Fiordiligi i Così fan tutte, titelrollen i Zaide, Gretel i Hänsel und Gretel och Oberto i Alcina. Första skivan: Traetta, Ifigenia in Tauride, Les Talens Lyriques, Christophe Rousset (Aparté, 2026). Bestenliste, Preis der deutschen Schallplattenkritik.",
@@ -751,16 +763,16 @@ const COPY = {
       "fr": "Karolina Bengtsson est soprano à l'Oper Frankfurt. Elle a reçu le Birgit Nilsson Stipendium en 2025. À Francfort en 2026/27, elle chante Fiordiligi dans Così fan tutte, le rôle-titre de Zaide, Gretel dans Hänsel und Gretel et Oberto dans Alcina. Premier disque : Traetta, Ifigenia in Tauride, Les Talens Lyriques, Christophe Rousset (Aparté, 2026). Bestenliste, Preis der deutschen Schallplattenkritik."
     },
     "long": {
-      "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, Småland. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s with Barbara Bonney at the Mozarteum in Salzburg in 2023. Wolfgang Holzmair taught her lied.\n\nShe came to the Opera Studio in Frankfurt in 2021 and has been in the ensemble since 2023. She has sung at the Bayerische Staatsoper, the Festival d’Aix-en-Provence and the Innsbruck Festival of Early Music, and in concert with the Swedish Radio Symphony Orchestra and the Gothenburg Symphony Orchestra.\n\nIn 2025 she received the Birgit Nilsson Stipendium. That summer she sang Camille in Louise in Aix and Dori in Traetta’s Ifigenia in Tauride in Innsbruck. The live recording came out on Aparté in 2026, with Les Talens Lyriques and Christophe Rousset. It is on the Bestenliste of the Preis der deutschen Schallplattenkritik and was reviewed in Gramophone.\n\nIn Frankfurt in 2026/27: Fiordiligi in Così fan tutte, the title role in Zaide, Gretel in Hänsel und Gretel and Oberto in Alcina.",
+      "en": "Karolina Bengtsson was born in 1997 and grew up in Huseby, Småland. She studied at the Royal Danish Academy of Music in Copenhagen and took her master’s with Barbara Bonney at the Mozarteum in Salzburg in 2023. She studied Lied with Wolfgang Holzmair.\n\nShe came to the Opera Studio in Frankfurt in 2021 and has been in the ensemble since 2023. She has sung at the Bayerische Staatsoper, the Festival d’Aix-en-Provence and the Innsbruck Festival of Early Music, and in concert with the Swedish Radio Symphony Orchestra and the Gothenburg Symphony Orchestra.\n\nIn 2025 she received the Birgit Nilsson Stipendium. That summer she sang Camille in Louise in Aix and Dori in Traetta’s Ifigenia in Tauride in Innsbruck. The live recording came out on Aparté in 2026, with Les Talens Lyriques and Christophe Rousset. It is on the Bestenliste of the Preis der deutschen Schallplattenkritik and was reviewed in Gramophone.\n\nIn Frankfurt in 2026/27: Fiordiligi in Così fan tutte, the title role in Zaide, Gretel in Hänsel und Gretel and Oberto in Alcina.",
       "sv": "Karolina Bengtsson föddes 1997 och växte upp i Huseby, en bruksort i Småland. Hon studerade vid Det Kongelige Danske Musikkonservatorium i Köpenhamn och tog master för Barbara Bonney vid Mozarteum i Salzburg 2023. I romans arbetade hon med Wolfgang Holzmair.\n\n2021 kom hon till operastudion i Frankfurt. Sedan 2023 sjunger hon i solistensemblen. Hon har gästat Bayerische Staatsoper, Festival d’Aix-en-Provence och Innsbrucker Festwochen, och sjungit med Sveriges Radios symfoniorkester och Göteborgs Symfoniker.\n\n2025 fick hon Birgit Nilsson-stipendiet. Samma sommar sjöng hon Camille i Louise i Aix och Dori i Traettas Ifigenia in Tauride i Innsbruck. Liveinspelningen kom på Aparté 2026, med Les Talens Lyriques och Christophe Rousset. Den togs upp på Bestenliste hos Preis der deutschen Schallplattenkritik och recenserades i Gramophone.\n\nI Frankfurt 2026/27: Fiordiligi i Così fan tutte, titelrollen i Zaide, Gretel i Hänsel und Gretel och Oberto i Alcina.",
       "de": "Karolina Bengtsson, geboren 1997, wuchs in Huseby in Småland auf. Sie studierte an der Königlich Dänischen Musikakademie in Kopenhagen und machte 2023 ihren Master bei Barbara Bonney am Mozarteum in Salzburg. Lied bei Wolfgang Holzmair.\n\n2021 kam sie ins Opernstudio in Frankfurt. Seit 2023 singt sie im Solistenensemble. Sie war an der Bayerischen Staatsoper, beim Festival d’Aix-en-Provence und bei den Innsbrucker Festwochen, im Konzert beim Schwedischen Rundfunk-Sinfonieorchester und bei den Göteborger Symphonikern.\n\n2025 erhielt sie das Birgit-Nilsson-Stipendium. Im Sommer sang sie Camille in Louise in Aix und Dori in Traettas Ifigenia in Tauride in Innsbruck. Die Liveaufnahme erschien 2026 bei Aparté, mit Les Talens Lyriques und Christophe Rousset. Sie steht auf der Bestenliste des Preises der deutschen Schallplattenkritik und wurde in Gramophone besprochen.\n\nIn Frankfurt 2026/27: Fiordiligi in Così fan tutte, die Titelpartie in Zaide, Gretel in Hänsel und Gretel und Oberto in Alcina.",
       "fr": "Karolina Bengtsson est née en 1997 et a grandi à Huseby, dans le Småland. Elle a étudié à l'Académie royale danoise de musique à Copenhague et a passé son master en 2023 avec Barbara Bonney au Mozarteum de Salzbourg. Le lied, elle l'a travaillé avec Wolfgang Holzmair.\n\nElle est arrivée à l'Opera Studio de Francfort en 2021 et chante dans la troupe depuis 2023. Elle a été à la Bayerische Staatsoper, au Festival d’Aix-en-Provence et aux Innsbrucker Festwochen, et en concert avec l'Orchestre symphonique de la Radio suédoise et l'Orchestre symphonique de Göteborg.\n\nEn 2025, elle a reçu le Birgit Nilsson Stipendium. Cet été-là, elle a chanté Camille dans Louise à Aix et Dori dans Ifigenia in Tauride de Traetta à Innsbruck. L'enregistrement live est paru chez Aparté en 2026, avec Les Talens Lyriques et Christophe Rousset. Il est sur la Bestenliste du Preis der deutschen Schallplattenkritik et a été chroniqué dans Gramophone.\n\nÀ Francfort en 2026/27 : Fiordiligi dans Così fan tutte, le rôle-titre de Zaide, Gretel dans Hänsel und Gretel et Oberto dans Alcina."
     },
     "usage": {
-      "en": "Stage photos: Barbara Aumüller, Oper Frankfurt. Portrait: Tore Sjöqvist. More files via the management.",
-      "sv": "Scenbilder: Barbara Aumüller, Oper Frankfurt. Porträtt: Tore Sjöqvist. Fler filer via management.",
-      "de": "Bühnenfotos: Barbara Aumüller, Oper Frankfurt. Porträt: Tore Sjöqvist. Weitere Dateien über das Management.",
-      "fr": "Photos de scène : Barbara Aumüller, Oper Frankfurt. Portrait : Tore Sjöqvist. Autres fichiers auprès du management."
+      "en": "These files are for web and preview. Print originals are available from the management. Stage photos: Barbara Aumüller, Oper Frankfurt. Portrait: Tore Sjöqvist.",
+      "sv": "Filerna är för webb och förhandsvisning. Tryckoriginal finns via management. Scenbilder: Barbara Aumüller, Oper Frankfurt. Porträtt: Tore Sjöqvist.",
+      "de": "Die Dateien sind für Web und Vorschau. Druckvorlagen über das Management. Bühnenfotos: Barbara Aumüller, Oper Frankfurt. Porträt: Tore Sjöqvist.",
+      "fr": "Ces fichiers sont destinés au web et à l'aperçu. Les originaux pour l'impression sont disponibles auprès du management. Photos de scène : Barbara Aumüller, Oper Frankfurt. Portrait : Tore Sjöqvist."
     }
   },
   "footer": {
@@ -2004,10 +2016,9 @@ const OF = {
 };
 
 const PRESS_PHOTOS = [
-  { file: "img/anna.jpg", thumb: "img/anna-480.webp", name: "Karolina-Bengtsson-Anna-Bluehen.jpg", credit: "credit.anna", alt: "gallery.annaAlt" },
-  { file: "img/belisa.jpg", thumb: "img/belisa-480.webp", name: "Karolina-Bengtsson-Belisa.jpg", credit: "credit.belisa", alt: "gallery.belisaAlt" },
-  { file: "img/cosi-brief.jpg", thumb: "img/cosi-brief-480.webp", name: "Karolina-Bengtsson-Fiordiligi.jpg", credit: "credit.stage", alt: "gallery.briefAlt" },
-  { file: "img/hero.jpg", thumb: "img/hero-480.webp", name: "Karolina-Bengtsson-portrait.jpg", credit: "credit.portrait", alt: "opening.portraitAlt" }
+  { file: "img/anna.jpg", thumb: "img/anna-480.webp", name: "Karolina-Bengtsson-Anna-Bluehen.jpg", credit: "credit.anna", alt: "gallery.annaAlt", size: "1179 × 779" },
+  { file: "img/belisa.jpg", thumb: "img/belisa-480.webp", name: "Karolina-Bengtsson-Belisa.jpg", credit: "credit.belisa", alt: "gallery.belisaAlt", size: "1179 × 834" },
+  { file: "img/hero.jpg", thumb: "img/hero-480.webp", name: "Karolina-Bengtsson-portrait.jpg", credit: "credit.portrait", alt: "opening.portraitAlt", size: "927 × 1159" }
 ];
 
 function ofHref(key, lang) {
@@ -2046,11 +2057,26 @@ function decorateLinks(root, lang) {
 
 function detectLang() {
   try {
+    var q = new URLSearchParams(location.search).get("lang");
+    if (LANGS.indexOf(q) !== -1) return q;
+  } catch (e) {}
+  try {
     var stored = window.localStorage.getItem(STORE);
     if (LANGS.indexOf(stored) !== -1) return stored;
   } catch (e) {}
   var nav = (navigator.language || "").slice(0, 2).toLowerCase();
   return LANGS.indexOf(nav) !== -1 ? nav : "sv";
+}
+
+function syncLangUrl(lang, force) {
+  try {
+    var url = new URL(location.href);
+    var current = url.searchParams.get("lang");
+    if (!force && !current) return;
+    if (current === lang) return;
+    url.searchParams.set("lang", lang);
+    history.replaceState(null, "", url.pathname + url.search + url.hash);
+  } catch (e) {}
 }
 
 function applyChrome(lang) {
@@ -2065,6 +2091,8 @@ function applyChrome(lang) {
   if (twt) twt.setAttribute("content", M(COPY.title, lang));
   var ogd = document.querySelector("meta[property=\"og:description\"]");
   if (ogd) ogd.setAttribute("content", desc);
+  var twd = document.querySelector("meta[name=\"twitter:description\"]");
+  if (twd) twd.setAttribute("content", desc);
   var localeMap = { en: "en_US", sv: "sv_SE", de: "de_DE", fr: "fr_FR" };
   var locales = ["en_US", "sv_SE", "de_DE", "fr_FR"];
   var currentLocale = localeMap[lang] || "en_US";
@@ -2126,11 +2154,12 @@ function renderNews(lang) {
     "<p class=\"news-date\">" + M(lead.date, lang) + "</p>" +
     "<h3>" + M(lead.headline, lang) + "</h3>" +
     "<p class=\"body\">" + M(lead.body, lang) + "</p></article>";
-  var briefs = "<div class=\"news-rest\">" + rest.map(function (item) {
+  var briefs = "<details class=\"full-fold\"><summary>" + M(COPY.news.more, lang) + "</summary>" +
+    "<div class=\"news-rest\">" + rest.map(function (item) {
     return "<article class=\"news-item\"><p class=\"news-date\">" + M(item.date, lang) +
       "</p><h3>" + M(item.headline, lang) + "</h3><p class=\"body\">" +
       M(item.body, lang) + "</p></article>";
-  }).join("") + "</div>";
+  }).join("") + "</div></details>";
   host.innerHTML = splash + briefs;
   decorateLinks(host, lang);
   rewriteOperFrankfurtLinks(lang);
@@ -2344,6 +2373,7 @@ function renderPress(lang) {
         "<img src=\"" + photo.file + "\" alt=\"" + M(lookup(photo.alt), lang) + "\" loading=\"lazy\" decoding=\"async\">" +
         "<figcaption>" +
           "<span>" + M(lookup(photo.credit), lang) + "</span>" +
+          "<span>" + photo.size + " px</span>" +
           "<a href=\"" + photo.file + "\" download=\"" + photo.name + "\" data-press-file=\"" + photo.file + "\">" + dl + "</a>" +
         "</figcaption>" +
       "</figure>";
@@ -2351,6 +2381,12 @@ function renderPress(lang) {
   }
   var cv = document.getElementById("press-cv-link");
   if (cv) cv.setAttribute("href", "press/cv.html?lang=" + lang);
+  var pdf = document.getElementById("press-cv-pdf");
+  if (pdf) {
+    var pdfName = "Karolina-Bengtsson-CV-" + lang + ".pdf";
+    pdf.setAttribute("href", "press/" + pdfName);
+    pdf.setAttribute("download", pdfName);
+  }
 }
 
 function setupPressDownloads() {
@@ -2383,6 +2419,7 @@ function applyLang(lang, opts) {
   var y = restoreScroll ? window.scrollY : 0;
   currentLang = lang;
   try { window.localStorage.setItem(STORE, lang); } catch (e) {}
+  syncLangUrl(lang, opts && opts.syncUrl);
   applyChrome(lang);
   renderNews(lang);
   renderChronology(lang);
@@ -2406,7 +2443,7 @@ function setLang(lang, opts) {
     main.classList.add("is-lang-fading");
     langFadeTimer = window.setTimeout(function () {
       langFadeTimer = 0;
-      applyLang(lang, { restoreScroll: true });
+      applyLang(lang, { restoreScroll: true, syncUrl: true });
       requestAnimationFrame(function () {
         main.classList.remove("is-lang-fading");
       });
@@ -2414,7 +2451,7 @@ function setLang(lang, opts) {
     return;
   }
   if (main) main.classList.remove("is-lang-fading");
-  applyLang(lang, { restoreScroll: changing });
+  applyLang(lang, { restoreScroll: changing, syncUrl: changing });
 }
 
 function isMobileNav() {

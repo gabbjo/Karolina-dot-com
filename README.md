@@ -12,7 +12,7 @@ python3 -m http.server
 
 ## Språk
 
-SV, EN, DE och FR. Valet sparas som `kb-lang` i localStorage. Första besöket följer `navigator.language` (standard svenska).
+SV, EN, DE och FR. Valet sparas som `kb-lang` i localStorage. Första besöket följer `navigator.language` (standard svenska). Direktlänk: `/?lang=en` (även `sv`, `de`, `fr`).
 
 Live: https://karolinabengtsson.com
 

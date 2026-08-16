@@ -8,9 +8,9 @@
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preload" href="../fonts/fraunces-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../fonts/source-sans-3-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="../css/site.css?v=20260816e">
-  <link rel="stylesheet" href="../css/fonts-late.css?v=20260816e" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../css/fonts-late.css?v=20260816e"></noscript>
+  <link rel="stylesheet" href="../css/site.css?v=20260816f">
+  <link rel="stylesheet" href="../css/fonts-late.css?v=20260816f" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../css/fonts-late.css?v=20260816f"></noscript>
   <style>
     body { background: #fff8ee; }
     .cv-page { width: min(100% - 2.4rem, 42rem); margin: 2.5rem auto 4rem; }
@@ -43,6 +43,7 @@
       <button type="button" data-cv="de">DE</button>
       <button type="button" data-cv="fr">FR</button>
       <button type="button" onclick="window.print()">Skriv ut</button>
+      <a id="cv-pdf" href="Karolina-Bengtsson-CV-sv.pdf" download="Karolina-Bengtsson-CV-sv.pdf">PDF</a>
       <a href="../index.html#press">karolinabengtsson.com</a>
     </p>
 
@@ -176,6 +177,12 @@
         document.querySelectorAll(".cv").forEach(function (el) {
           el.hidden = el.getAttribute("data-lang") !== lang;
         });
+        var pdf = document.getElementById("cv-pdf");
+        if (pdf) {
+          var name = "Karolina-Bengtsson-CV-" + lang + ".pdf";
+          pdf.setAttribute("href", name);
+          pdf.setAttribute("download", name);
+        }
       }
       show(start);
       document.querySelectorAll("[data-cv]").forEach(function (btn) {
