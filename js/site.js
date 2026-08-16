@@ -775,6 +775,30 @@ const COPY = {
       "fr": "Ces fichiers sont destinés au web et à l'aperçu. Les originaux pour l'impression sont disponibles auprès du management. Photos de scène : Barbara Aumüller, Oper Frankfurt. Portrait : Tore Sjöqvist."
     }
   },
+  "marks": {
+    "label": {
+      "en": "Selected notices",
+      "sv": "I korthet",
+      "de": "Im Überblick",
+      "fr": "En bref"
+    },
+    "m1": "Bestenliste",
+    "s1": "Preis der deutschen Schallplattenkritik",
+    "m2": "Gramophone",
+    "s2": {
+      "en": "July 2026",
+      "sv": "juli 2026",
+      "de": "Juli 2026",
+      "fr": "juillet 2026"
+    },
+    "m3": "Birgit Nilsson",
+    "s3": {
+      "en": "Stipendium 2025",
+      "sv": "Stipendium 2025",
+      "de": "Stipendium 2025",
+      "fr": "Stipendium 2025"
+    }
+  },
   "footer": {
     "top": {
       "en": "Back to top",
