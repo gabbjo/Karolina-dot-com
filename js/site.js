@@ -870,10 +870,10 @@ const NEWS = [
       "fr": "Parution du premier enregistrement"
     },
     "body": {
-      "en": "Aparté issued <em>Ifigenia in Tauride</em>, the world premiere recording of Traetta's opera, with Karolina as Dori. BBC Music Magazine gave it four stars; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone reviewed it in its July 2026 issue</a>. <a href=\"#media\">Hear it further down this page</a>.",
-      "sv": "Aparté gav ut <em>Ifigenia in Tauride</em>, världspremiärinspelningen av Traettas opera, med Karolina som Dori. BBC Music Magazine gav fyra stjärnor; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone recenserade den i julnumret 2026</a>. <a href=\"#media\">Hör den längre ner på sidan</a>.",
-      "de": "Aparté veröffentlichte <em>Ifigenia in Tauride</em>, die Weltersteinspielung von Traettas Oper, mit Karolina als Dori. Das BBC Music Magazine vergab vier Sterne; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone besprach die Aufnahme in der Juli-Ausgabe 2026</a>. <a href=\"#media\">Zu hören weiter unten auf dieser Seite</a>.",
-      "fr": "Aparté a publié <em>Ifigenia in Tauride</em>, premier enregistrement mondial de l'opéra de Traetta, avec Karolina dans le rôle de Dori. BBC Music Magazine lui a attribué quatre étoiles ; <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone en a rendu compte dans son numéro de juillet 2026</a>. <a href=\"#media\">À écouter plus bas sur cette page</a>."
+      "en": "Aparté issued <em>Ifigenia in Tauride</em>, the first recording of Traetta's opera, with Karolina as Dori. <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone reviewed it in July 2026</a>. <a href=\"#media\">Hear it further down this page</a>.",
+      "sv": "Aparté gav ut <em>Ifigenia in Tauride</em>, första inspelningen av Traettas opera, med Karolina som Dori. <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone recenserade den i juli 2026</a>. <a href=\"#media\">Hör den längre ner på sidan</a>.",
+      "de": "Aparté veröffentlichte <em>Ifigenia in Tauride</em>, die erste Aufnahme von Traettas Oper, mit Karolina als Dori. <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone besprach sie im Juli 2026</a>. <a href=\"#media\">Zu hören weiter unten auf dieser Seite</a>.",
+      "fr": "Aparté a publié <em>Ifigenia in Tauride</em>, le premier enregistrement de l'opéra de Traetta, avec Karolina dans le rôle de Dori. <a href=\"https://www.gramophone.co.uk/reviews/traetta-ifigenia-in-tauride-rousset\">Gramophone en a rendu compte en juillet 2026</a>. <a href=\"#media\">À écouter plus bas sur cette page</a>."
     }
   },
   {
@@ -2031,6 +2031,7 @@ function decorateLinks(root, lang) {
   root.querySelectorAll("a[href]").forEach(function (a) {
     var href = a.getAttribute("href") || "";
     if (href.charAt(0) === "#" || href.indexOf("mailto:") === 0 || href.indexOf("tel:") === 0) return;
+    if (a.hasAttribute("download") || a.hasAttribute("data-press-file")) return;
     a.target = "_blank";
     a.rel = "noreferrer";
     var tip = a.querySelector(".visually-hidden");
@@ -2294,8 +2295,7 @@ function filenameForPress(kind, lang) {
   return (base[kind] && base[kind][lang]) || ("Karolina-Bengtsson-" + kind + ".txt");
 }
 
-function downloadTextFile(filename, text) {
-  var blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+function downloadBlob(filename, blob) {
   var url = URL.createObjectURL(blob);
   var a = document.createElement("a");
   a.href = url;
@@ -2304,6 +2304,27 @@ function downloadTextFile(filename, text) {
   a.click();
   a.remove();
   window.setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+}
+
+function downloadTextFile(filename, text) {
+  downloadBlob(filename, new Blob([text], { type: "text/plain;charset=utf-8" }));
+}
+
+function downloadHref(url, filename) {
+  fetch(url).then(function (res) {
+    if (!res.ok) throw new Error("download failed");
+    return res.blob();
+  }).then(function (blob) {
+    downloadBlob(filename, blob);
+  }).catch(function () {
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.rel = "noopener";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  });
 }
 
 function renderPress(lang) {
@@ -2320,10 +2341,10 @@ function renderPress(lang) {
     var dl = M(COPY.press.download, lang);
     host.innerHTML = PRESS_PHOTOS.map(function (photo) {
       return "<figure class=\"press-shot\">" +
-        "<img src=\"" + photo.thumb + "\" alt=\"" + M(lookup(photo.alt), lang) + "\" width=\"480\" height=\"320\" loading=\"lazy\" decoding=\"async\">" +
+        "<img src=\"" + photo.file + "\" alt=\"" + M(lookup(photo.alt), lang) + "\" loading=\"lazy\" decoding=\"async\">" +
         "<figcaption>" +
           "<span>" + M(lookup(photo.credit), lang) + "</span>" +
-          "<a href=\"" + photo.file + "\" download=\"" + photo.name + "\">" + dl + "</a>" +
+          "<a href=\"" + photo.file + "\" download=\"" + photo.name + "\" data-press-file=\"" + photo.file + "\">" + dl + "</a>" +
         "</figcaption>" +
       "</figure>";
     }).join("");
@@ -2340,6 +2361,15 @@ function setupPressDownloads() {
       downloadTextFile(filenameForPress(kind, currentLang), text);
     });
   });
+  var photos = document.getElementById("press-photos");
+  if (photos) {
+    photos.addEventListener("click", function (event) {
+      var a = event.target.closest("a[data-press-file]");
+      if (!a) return;
+      event.preventDefault();
+      downloadHref(a.getAttribute("data-press-file"), a.getAttribute("download"));
+    });
+  }
 }
 
 function prefersReducedMotion() {

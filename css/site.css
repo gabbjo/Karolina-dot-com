@@ -625,7 +625,7 @@ a:hover {
 .feature-meta em {
   font-family: var(--display);
   font-style: italic;
-  color: var(--ink);
+  color: var(--accent);
 }
 
 .feature-photo {
@@ -639,9 +639,9 @@ a:hover {
 }
 
 .feature-photo img {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   object-fit: cover;
-  object-position: 50% 18%;
+  object-position: 50% 20%;
   border-radius: 6px;
   box-shadow: var(--shadow-md);
 }
@@ -789,7 +789,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--accent);
 }
 
 .season-row-work {
@@ -806,6 +806,7 @@ a:hover {
 
 .season-row-work em {
   font-style: italic;
+  color: var(--accent);
 }
 
 .season-flag {
@@ -904,7 +905,7 @@ a:hover {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--muted-light);
+  color: var(--accent);
 }
 
 .news-lead h3,
@@ -921,6 +922,12 @@ a:hover {
   margin: 0.55rem 0 0;
   max-width: 42rem;
   color: var(--muted);
+}
+
+.news-lead .body em,
+.news-item .body em {
+  color: var(--accent);
+  font-style: italic;
 }
 
 .news-rest {
@@ -1154,6 +1161,7 @@ button.text-link:hover {
 .year-entries em {
   font-family: var(--display);
   font-style: italic;
+  color: var(--accent);
 }
 
 .year-entries .venue,
@@ -1396,7 +1404,7 @@ button.text-link:hover {
 
 .gallery-more {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1.25rem;
 }
@@ -1482,6 +1490,7 @@ button.text-link:hover {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: 50% 18%;
   background: var(--bg-subtle);
 }
 
