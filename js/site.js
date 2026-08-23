@@ -117,6 +117,12 @@ const COPY = {
       "sv": "Kontakt",
       "de": "Kontakt",
       "fr": "Contact"
+    },
+    "concepts": {
+      "en": "Concepts",
+      "sv": "Koncept",
+      "de": "Konzepte",
+      "fr": "Concepts"
     }
   },
   "opening": {
@@ -631,6 +637,56 @@ const COPY = {
       "sv": "Porträtt",
       "de": "Porträts",
       "fr": "Portraits"
+    }
+  },
+  "concepts": {
+    "title": {
+      "en": "Editorial concepts",
+      "sv": "Redaktionella koncept",
+      "de": "Editorielle Konzepte",
+      "fr": "Concepts éditoriaux"
+    },
+    "lead": {
+      "en": "Four independent portfolio directions, developed in parallel. Each opens as a complete static site.",
+      "sv": "Fyra självständiga portföljriktningar, utvecklade parallellt. Varje koncept öppnas som en färdig statisk webbplats.",
+      "de": "Vier eigenständige Portfolio-Richtungen, parallel entwickelt. Jedes Konzept öffnet sich als vollständige statische Website.",
+      "fr": "Quatre directions de portfolio indépendantes, développées en parallèle. Chaque concept s'ouvre comme un site statique complet."
+    },
+    "opus": {
+      "en": "Opus — self-hosted fonts, audio and film",
+      "sv": "Opus — självhostade typsnitt, ljud och film",
+      "de": "Opus — selbst gehostete Schriften, Audio und Film",
+      "fr": "Opus — polices, audio et film auto-hébergés"
+    },
+    "composer": {
+      "en": "Composer — Cormorant Garamond, Scandinavian framing",
+      "sv": "Composer — Cormorant Garamond, skandinavisk inramning",
+      "de": "Composer — Cormorant Garamond, skandinavischer Rahmen",
+      "fr": "Composer — Cormorant Garamond, cadre scandinave"
+    },
+    "grok5": {
+      "en": "Katalog 26–27 — Oper Frankfurt, five portrait plates",
+      "sv": "Katalog 26–27 — Oper Frankfurt, fem porträttplåtar",
+      "de": "Katalog 26–27 — Oper Frankfurt, fünf Porträtplatten",
+      "fr": "Katalog 26–27 — Oper Frankfurt, cinq portraits"
+    },
+    "grokEea": {
+      "en": "Programme — paper texture, Schibsted Grotesk",
+      "sv": "Programme — papperstextur, Schibsted Grotesk",
+      "de": "Programme — Papiertextur, Schibsted Grotesk",
+      "fr": "Programme — texture papier, Schibsted Grotesk"
+    },
+    "open": {
+      "en": "Open",
+      "sv": "Öppna",
+      "de": "Öffnen",
+      "fr": "Ouvrir"
+    },
+    "hub": {
+      "en": "Overview of all four concepts",
+      "sv": "Översikt över alla fyra koncept",
+      "de": "Übersicht aller vier Konzepte",
+      "fr": "Vue d'ensemble des quatre concepts"
     }
   },
   "contact": {
