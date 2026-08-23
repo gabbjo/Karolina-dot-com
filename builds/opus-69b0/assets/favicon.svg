@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="KB">
+  <rect width="32" height="32" fill="#f4f1ea"/>
+  <rect x="4" y="25.5" width="24" height="0.75" fill="#6b5c46"/>
+  <text x="16" y="22" text-anchor="middle"
+        font-family="Iowan Old Style, Palatino, Georgia, serif"
+        font-size="19" font-style="italic" fill="#181716">K</text>
+</svg>
