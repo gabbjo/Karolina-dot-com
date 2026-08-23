@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Builds — Karolina Bengtsson</title>
+  <meta name="description" content="Four editorial portfolio concepts for Swedish soprano Karolina Bengtsson.">
+  <meta name="robots" content="noindex">
+  <style>
+    :root {
+      --paper: #f4f1ea;
+      --ink: #181716;
+      --muted: #6b6560;
+      --rule: rgba(24, 23, 22, 0.14);
+      --accent: #6b5344;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      width: min(42rem, 100% - 2.5rem);
+      margin: 0 auto;
+      padding: 4rem 0 5rem;
+    }
+    h1 {
+      margin: 0 0 .5rem;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .lede {
+      margin: 0 0 2.5rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .meta {
+      font-family: ui-monospace, "Courier New", monospace;
+      font-size: .68rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid var(--rule);
+    }
+    li {
+      border-bottom: 1px solid var(--rule);
+    }
+    a {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: baseline;
+      padding: 1.15rem 0;
+      color: inherit;
+      text-decoration: none;
+      transition: opacity .25s ease;
+    }
+    a:hover { opacity: .65; }
+    .title {
+      font-size: 1.35rem;
+      line-height: 1.2;
+    }
+    .agent {
+      font-family: ui-monospace, "Courier New", monospace;
+      font-size: .68rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .note {
+      grid-column: 1 / -1;
+      margin: 0;
+      font-size: .92rem;
+      color: var(--muted);
+    }
+    .back {
+      display: inline-block;
+      margin-top: 2.5rem;
+      font-family: ui-monospace, "Courier New", monospace;
+      font-size: .68rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="meta">Archive · Aug 2026</p>
+    <h1>Portfolio builds</h1>
+    <p class="lede">Four independent editorial concepts, created in parallel. Each opens as a complete static site.</p>
+
+    <ul>
+      <li>
+        <a href="opus-69b0/">
+          <span>
+            <span class="title">Opus</span><br>
+            <span class="agent">Claude Opus 5</span>
+          </span>
+          <span class="meta">Open →</span>
+          <p class="note">Self-hosted fonts, audio, and film. No third-party requests.</p>
+        </a>
+      </li>
+      <li>
+        <a href="composer-e3ca/">
+          <span>
+            <span class="title">Composer</span><br>
+            <span class="agent">Composer 2.5</span>
+          </span>
+          <span class="meta">Open →</span>
+          <p class="note">Cormorant Garamond · Scandinavian house soprano framing.</p>
+        </a>
+      </li>
+      <li>
+        <a href="grok-5cf4/">
+          <span>
+            <span class="title">Katalog 26–27</span><br>
+            <span class="agent">Grok 4.6</span>
+          </span>
+          <span class="meta">Open →</span>
+          <p class="note">Plain HTML · Oper Frankfurt · five portrait plates.</p>
+        </a>
+      </li>
+      <li>
+        <a href="grok-eea0/">
+          <span>
+            <span class="title">Programme</span><br>
+            <span class="agent">Grok 4.6</span>
+          </span>
+          <span class="meta">Open →</span>
+          <p class="note">Paper-grain texture · Schibsted Grotesk · Vite build.</p>
+        </a>
+      </li>
+    </ul>
+
+    <a class="back" href="../">← Official site</a>
+  </main>
+</body>
+</html>
