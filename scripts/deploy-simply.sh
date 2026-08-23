@@ -2,16 +2,18 @@
 # Deploy official Karolina Bengtsson site to Simply.com public_html
 # Requires: lftp (apt install lftp)
 # Usage:
-#   FTP_SERVER=karolinabengtsson.com \
-#   FTP_USERNAME=karolinabengtsson.com \
-#   FTP_PASSWORD='your-password' \
-#   ./scripts/deploy-simply.sh
+#   FTP_PASSWORD='your-password' ./scripts/deploy-simply.sh
+#   DEPLOY_ROOT=builds/opus-69b0 FTP_PASSWORD='...' ./scripts/deploy-simply.sh
 
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-SERVER="${FTP_SERVER:-karolinabengtsson.com}"
-USER="${FTP_USERNAME:?Set FTP_USERNAME}"
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+ROOT="${DEPLOY_ROOT:-${REPO_ROOT}}"
+if [[ "${ROOT}" != /* ]]; then
+  ROOT="${REPO_ROOT}/${ROOT}"
+fi
+SERVER="${FTP_SERVER:-ftp.simply.com}"
+USER="${FTP_USERNAME:-karolinabengts.com}"
 PASS="${FTP_PASSWORD:?Set FTP_PASSWORD}"
 
 if ! command -v lftp >/dev/null 2>&1; then
@@ -19,12 +21,12 @@ if ! command -v lftp >/dev/null 2>&1; then
   sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 fi
 
-echo "Deploying to ftps://${SERVER}/public_html/ ..."
+echo "Deploying ${ROOT} to ftp://${SERVER}/public_html/ as ${USER} ..."
 
-lftp -u "${USER}","${PASS}" "ftps://${SERVER}" <<EOF
-set ftp:ssl-force true
-set ftp:ssl-protect-data true
-set ssl:verify-certificate no
+lftp -u "${USER}","${PASS}" "ftp://${SERVER}" <<EOF
+set net:timeout 30
+set net:max-retries 2
+set ftp:passive-mode true
 lcd ${ROOT}
 cd public_html
 mirror --reverse --delete --verbose \
