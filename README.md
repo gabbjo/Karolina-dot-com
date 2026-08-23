@@ -1,34 +1,21 @@
 # Karolina Bengtsson
 
-Personlig webbplats för sopranen Karolina Bengtsson. Ren HTML, CSS och JavaScript — ingen build.
+Personal website for soprano Karolina Bengtsson. Plain HTML, CSS and a few lines of JavaScript — no build step, no third-party fonts.
 
 Live: https://karolinabengtsson.com
 
-## Portfolio builds (arkiv)
+The published site is a refined version of the Grok 4.6 editorial build (`builds/grok-5cf4`), using Tore Sjöqvist’s four outdoor portraits and biography text from the official artist materials. Google Fonts and unverified catalogue copy from the first Grok drafts were removed.
 
-Fyra parallella editorial-koncept finns i [`builds/`](builds/):
-
-| Mapp | Agent | Beskrivning |
-|------|-------|-------------|
-| [`builds/opus-69b0/`](builds/opus-69b0/) | Claude Opus 5 | Självhostade typsnitt, ljud och film |
-| [`builds/composer-e3ca/`](builds/composer-e3ca/) | Composer 2.5 | Cormorant Garamond, skandinavisk inramning |
-| [`builds/grok-5cf4/`](builds/grok-5cf4/) | Grok 4.6 | Katalog 26–27, Oper Frankfurt |
-| [`builds/grok-eea0/`](builds/grok-eea0/) | Grok 4.6 | Papperstextur, Schibsted Grotesk |
-
-Öppna [`builds/`](builds/) för en översikt. Zip-arkiv finns i repots rot.
-
-## Öppna lokalt
+## Open locally
 
 ```
 python3 -m http.server
 ```
 
-Öppna http://localhost:8000
+Open http://localhost:8000
 
-## Språk
+## Publish
 
-SV, EN, DE och FR. Valet sparas som `kb-lang` i localStorage. Första besöket följer `navigator.language` (standard svenska).
+Upload the contents of this folder to the web host so that `index.html` is in the web root. Apache reads `.htaccess` (security and cache headers). Fonts live in `fonts/` and load locally.
 
-## Publicera
-
-Ladda upp innehållet i den här mappen till webbhotellet så att `index.html` ligger i webbrotten. Apache läser `.htaccess` (säkerhets- och cache-headers). Typsnitten ligger i `fonts/` och laddas lokalt, inte från Google Fonts.
+Zip files, `scripts/`, and markdown notes are not deployed.
